@@ -1,0 +1,540 @@
+O:4:"wsdl":52:{s:4:"wsdl";s:49:"http://datafeed.stockbiz.vn/NewsService.asmx?WSDL";s:7:"schemas";a:1:{s:28:"http://datafeed.stockbiz.vn/";a:1:{i:0;O:16:"nusoap_xmlschema":35:{s:6:"schema";s:0:"";s:3:"xml";s:0:"";s:19:"enclosingNamespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"soap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:2:"tm";s:44:"http://microsoft.com/wsdl/mime/textMatching/";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"mime";s:37:"http://schemas.xmlsoap.org/wsdl/mime/";s:3:"tns";s:28:"http://datafeed.stockbiz.vn/";s:1:"s";s:32:"http://www.w3.org/2001/XMLSchema";s:6:"soap12";s:39:"http://schemas.xmlsoap.org/wsdl/soap12/";s:4:"http";s:37:"http://schemas.xmlsoap.org/wsdl/http/";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";}s:10:"schemaInfo";a:4:{s:18:"elementFormDefault";s:9:"qualified";s:15:"targetNamespace";s:28:"http://datafeed.stockbiz.vn/";s:13:"schemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:20:"attributeFormDefault";s:11:"unqualified";}s:21:"schemaTargetNamespace";s:28:"http://datafeed.stockbiz.vn/";s:10:"attributes";a:0:{}s:12:"complexTypes";a:12:{s:22:"_GetNews_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:4:{s:8:"userName";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"userName";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"password";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"password";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:9:"startDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:9:"startDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}s:7:"endDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:7:"endDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}}}s:30:"_GetNewsResponse_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:13:"GetNewsResult";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:13:"GetNewsResult";s:4:"type";s:40:"http://datafeed.stockbiz.vn/:ArrayOfNews";s:4:"form";s:9:"qualified";}}}s:11:"ArrayOfNews";a:5:{s:4:"name";s:11:"ArrayOfNews";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:4:"News";a:6:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:9:"unbounded";s:4:"name";s:4:"News";s:8:"nillable";s:4:"true";s:4:"type";s:33:"http://datafeed.stockbiz.vn/:News";s:4:"form";s:9:"qualified";}}}s:4:"News";a:5:{s:4:"name";s:4:"News";s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:10:{s:6:"NewsID";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:6:"NewsID";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:9:"qualified";}s:5:"Title";a:6:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:5:"Title";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:11:"Description";a:6:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:11:"Description";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:4:"Date";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:4:"Date";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}s:6:"Source";a:6:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:6:"Source";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"ImageUrl";a:6:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"ImageUrl";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:7:"GroupID";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:7:"GroupID";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:9:"qualified";}s:15:"HasAttachedFile";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:15:"HasAttachedFile";s:4:"type";s:40:"http://www.w3.org/2001/XMLSchema:boolean";s:4:"form";s:9:"qualified";}s:16:"AttachedFileName";a:6:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:16:"AttachedFileName";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:21:"AttachedFileExtension";a:6:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:21:"AttachedFileExtension";s:8:"nillable";s:4:"true";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}}}s:29:"_GetCompanyNews_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:5:{s:8:"userName";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"userName";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"password";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"password";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:6:"symbol";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:6:"symbol";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:9:"startDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:9:"startDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}s:7:"endDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:7:"endDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}}}s:37:"_GetCompanyNewsResponse_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:20:"GetCompanyNewsResult";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:20:"GetCompanyNewsResult";s:4:"type";s:40:"http://datafeed.stockbiz.vn/:ArrayOfNews";s:4:"form";s:9:"qualified";}}}s:30:"_GetIndustryNews_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:5:{s:8:"userName";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"userName";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"password";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"password";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:10:"industryID";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:10:"industryID";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:9:"qualified";}s:9:"startDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:9:"startDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}s:7:"endDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:7:"endDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}}}s:38:"_GetIndustryNewsResponse_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:21:"GetIndustryNewsResult";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:21:"GetIndustryNewsResult";s:4:"type";s:40:"http://datafeed.stockbiz.vn/:ArrayOfNews";s:4:"form";s:9:"qualified";}}}s:28:"_GetSectorNews_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:5:{s:8:"userName";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"userName";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"password";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"password";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"sectorID";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"sectorID";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:9:"qualified";}s:9:"startDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:9:"startDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}s:7:"endDate";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:7:"endDate";s:4:"type";s:41:"http://www.w3.org/2001/XMLSchema:dateTime";s:4:"form";s:9:"qualified";}}}s:36:"_GetSectorNewsResponse_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:19:"GetSectorNewsResult";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:19:"GetSectorNewsResult";s:4:"type";s:40:"http://datafeed.stockbiz.vn/:ArrayOfNews";s:4:"form";s:9:"qualified";}}}s:29:"_GetNewsContent_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:3:{s:8:"userName";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"userName";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:8:"password";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:8:"password";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}s:6:"newsID";a:5:{s:9:"minOccurs";s:1:"1";s:9:"maxOccurs";s:1:"1";s:4:"name";s:6:"newsID";s:4:"type";s:36:"http://www.w3.org/2001/XMLSchema:int";s:4:"form";s:9:"qualified";}}}s:37:"_GetNewsContentResponse_ContainedType";a:4:{s:9:"typeClass";s:11:"complexType";s:7:"phpType";s:6:"struct";s:10:"compositor";s:8:"sequence";s:8:"elements";a:1:{s:20:"GetNewsContentResult";a:5:{s:9:"minOccurs";s:1:"0";s:9:"maxOccurs";s:1:"1";s:4:"name";s:20:"GetNewsContentResult";s:4:"type";s:39:"http://www.w3.org/2001/XMLSchema:string";s:4:"form";s:9:"qualified";}}}}s:16:"complexTypeStack";a:0:{}s:18:"currentComplexType";N;s:8:"elements";a:10:{s:7:"GetNews";a:4:{s:4:"name";s:7:"GetNews";s:4:"form";s:9:"qualified";s:4:"type";s:51:"http://datafeed.stockbiz.vn/:_GetNews_ContainedType";s:9:"typeClass";s:7:"element";}s:15:"GetNewsResponse";a:4:{s:4:"name";s:15:"GetNewsResponse";s:4:"form";s:9:"qualified";s:4:"type";s:59:"http://datafeed.stockbiz.vn/:_GetNewsResponse_ContainedType";s:9:"typeClass";s:7:"element";}s:14:"GetCompanyNews";a:4:{s:4:"name";s:14:"GetCompanyNews";s:4:"form";s:9:"qualified";s:4:"type";s:58:"http://datafeed.stockbiz.vn/:_GetCompanyNews_ContainedType";s:9:"typeClass";s:7:"element";}s:22:"GetCompanyNewsResponse";a:4:{s:4:"name";s:22:"GetCompanyNewsResponse";s:4:"form";s:9:"qualified";s:4:"type";s:66:"http://datafeed.stockbiz.vn/:_GetCompanyNewsResponse_ContainedType";s:9:"typeClass";s:7:"element";}s:15:"GetIndustryNews";a:4:{s:4:"name";s:15:"GetIndustryNews";s:4:"form";s:9:"qualified";s:4:"type";s:59:"http://datafeed.stockbiz.vn/:_GetIndustryNews_ContainedType";s:9:"typeClass";s:7:"element";}s:23:"GetIndustryNewsResponse";a:4:{s:4:"name";s:23:"GetIndustryNewsResponse";s:4:"form";s:9:"qualified";s:4:"type";s:67:"http://datafeed.stockbiz.vn/:_GetIndustryNewsResponse_ContainedType";s:9:"typeClass";s:7:"element";}s:13:"GetSectorNews";a:4:{s:4:"name";s:13:"GetSectorNews";s:4:"form";s:9:"qualified";s:4:"type";s:57:"http://datafeed.stockbiz.vn/:_GetSectorNews_ContainedType";s:9:"typeClass";s:7:"element";}s:21:"GetSectorNewsResponse";a:4:{s:4:"name";s:21:"GetSectorNewsResponse";s:4:"form";s:9:"qualified";s:4:"type";s:65:"http://datafeed.stockbiz.vn/:_GetSectorNewsResponse_ContainedType";s:9:"typeClass";s:7:"element";}s:14:"GetNewsContent";a:4:{s:4:"name";s:14:"GetNewsContent";s:4:"form";s:9:"qualified";s:4:"type";s:58:"http://datafeed.stockbiz.vn/:_GetNewsContent_ContainedType";s:9:"typeClass";s:7:"element";}s:22:"GetNewsContentResponse";a:4:{s:4:"name";s:22:"GetNewsContentResponse";s:4:"form";s:9:"qualified";s:4:"type";s:66:"http://datafeed.stockbiz.vn/:_GetNewsContentResponse_ContainedType";s:9:"typeClass";s:7:"element";}}s:12:"elementStack";a:0:{}s:14:"currentElement";N;s:11:"simpleTypes";a:0:{}s:15:"simpleTypeStack";a:0:{}s:17:"currentSimpleType";N;s:7:"imports";a:0:{}s:6:"parser";N;s:8:"position";i:73;s:5:"depth";i:1;s:11:"depth_array";a:5:{i:0;i:0;i:1;i:69;i:2;i:70;i:3;i:71;i:4;i:72;}s:7:"message";a:73:{i:0;a:1:{s:5:"cdata";s:0:"";}i:1;a:1:{s:5:"cdata";s:0:"";}i:2;a:1:{s:5:"cdata";s:0:"";}i:3;a:1:{s:5:"cdata";s:0:"";}i:4;a:1:{s:5:"cdata";s:0:"";}i:5;a:1:{s:5:"cdata";s:0:"";}i:6;a:1:{s:5:"cdata";s:0:"";}i:7;a:1:{s:5:"cdata";s:0:"";}i:8;a:1:{s:5:"cdata";s:0:"";}i:9;a:1:{s:5:"cdata";s:0:"";}i:10;a:1:{s:5:"cdata";s:0:"";}i:11;a:1:{s:5:"cdata";s:0:"";}i:12;a:1:{s:5:"cdata";s:0:"";}i:13;a:1:{s:5:"cdata";s:0:"";}i:14;a:1:{s:5:"cdata";s:0:"";}i:15;a:1:{s:5:"cdata";s:0:"";}i:16;a:1:{s:5:"cdata";s:0:"";}i:17;a:1:{s:5:"cdata";s:0:"";}i:18;a:1:{s:5:"cdata";s:0:"";}i:19;a:1:{s:5:"cdata";s:0:"";}i:20;a:1:{s:5:"cdata";s:0:"";}i:21;a:1:{s:5:"cdata";s:0:"";}i:22;a:1:{s:5:"cdata";s:0:"";}i:23;a:1:{s:5:"cdata";s:0:"";}i:24;a:1:{s:5:"cdata";s:0:"";}i:25;a:1:{s:5:"cdata";s:0:"";}i:26;a:1:{s:5:"cdata";s:0:"";}i:27;a:1:{s:5:"cdata";s:0:"";}i:28;a:1:{s:5:"cdata";s:0:"";}i:29;a:1:{s:5:"cdata";s:0:"";}i:30;a:1:{s:5:"cdata";s:0:"";}i:31;a:1:{s:5:"cdata";s:0:"";}i:32;a:1:{s:5:"cdata";s:0:"";}i:33;a:1:{s:5:"cdata";s:0:"";}i:34;a:1:{s:5:"cdata";s:0:"";}i:35;a:1:{s:5:"cdata";s:0:"";}i:36;a:1:{s:5:"cdata";s:0:"";}i:37;a:1:{s:5:"cdata";s:0:"";}i:38;a:1:{s:5:"cdata";s:0:"";}i:39;a:1:{s:5:"cdata";s:0:"";}i:40;a:1:{s:5:"cdata";s:0:"";}i:41;a:1:{s:5:"cdata";s:0:"";}i:42;a:1:{s:5:"cdata";s:0:"";}i:43;a:1:{s:5:"cdata";s:0:"";}i:44;a:1:{s:5:"cdata";s:0:"";}i:45;a:1:{s:5:"cdata";s:0:"";}i:46;a:1:{s:5:"cdata";s:0:"";}i:47;a:1:{s:5:"cdata";s:0:"";}i:48;a:1:{s:5:"cdata";s:0:"";}i:49;a:1:{s:5:"cdata";s:0:"";}i:50;a:1:{s:5:"cdata";s:0:"";}i:51;a:1:{s:5:"cdata";s:0:"";}i:52;a:1:{s:5:"cdata";s:0:"";}i:53;a:1:{s:5:"cdata";s:0:"";}i:54;a:1:{s:5:"cdata";s:0:"";}i:55;a:1:{s:5:"cdata";s:0:"";}i:56;a:1:{s:5:"cdata";s:0:"";}i:57;a:1:{s:5:"cdata";s:0:"";}i:58;a:1:{s:5:"cdata";s:0:"";}i:59;a:1:{s:5:"cdata";s:0:"";}i:60;a:1:{s:5:"cdata";s:0:"";}i:61;a:1:{s:5:"cdata";s:0:"";}i:62;a:1:{s:5:"cdata";s:0:"";}i:63;a:1:{s:5:"cdata";s:0:"";}i:64;a:1:{s:5:"cdata";s:0:"";}i:65;a:1:{s:5:"cdata";s:0:"";}i:66;a:1:{s:5:"cdata";s:0:"";}i:67;a:1:{s:5:"cdata";s:0:"";}i:68;a:1:{s:5:"cdata";s:0:"";}i:69;a:1:{s:5:"cdata";s:0:"";}i:70;a:1:{s:5:"cdata";s:0:"";}i:71;a:1:{s:5:"cdata";s:0:"";}i:72;a:1:{s:5:"cdata";s:0:"";}}s:16:"defaultNamespace";a:73:{i:0;b:0;i:1;b:0;i:2;b:0;i:3;b:0;i:4;b:0;i:5;b:0;i:6;b:0;i:7;b:0;i:8;b:0;i:9;b:0;i:10;b:0;i:11;b:0;i:12;b:0;i:13;b:0;i:14;b:0;i:15;b:0;i:16;b:0;i:17;b:0;i:18;b:0;i:19;b:0;i:20;b:0;i:21;b:0;i:22;b:0;i:23;b:0;i:24;b:0;i:25;b:0;i:26;b:0;i:27;b:0;i:28;b:0;i:29;b:0;i:30;b:0;i:31;b:0;i:32;b:0;i:33;b:0;i:34;b:0;i:35;b:0;i:36;b:0;i:37;b:0;i:38;b:0;i:39;b:0;i:40;b:0;i:41;b:0;i:42;b:0;i:43;b:0;i:44;b:0;i:45;b:0;i:46;b:0;i:47;b:0;i:48;b:0;i:49;b:0;i:50;b:0;i:51;b:0;i:52;b:0;i:53;b:0;i:54;b:0;i:55;b:0;i:56;b:0;i:57;b:0;i:58;b:0;i:59;b:0;i:60;b:0;i:61;b:0;i:62;b:0;i:63;b:0;i:64;b:0;i:65;b:0;i:66;b:0;i:67;b:0;i:68;b:0;i:69;b:0;i:70;b:0;i:71;b:0;i:72;b:0;}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.7.3";s:8:"revision";s:18:"$Revision: 1.114 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:0:"";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:2:"-8";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"soap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:2:"tm";s:44:"http://microsoft.com/wsdl/mime/textMatching/";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"mime";s:37:"http://schemas.xmlsoap.org/wsdl/mime/";s:3:"tns";s:28:"http://datafeed.stockbiz.vn/";s:1:"s";s:32:"http://www.w3.org/2001/XMLSchema";s:6:"soap12";s:39:"http://schemas.xmlsoap.org/wsdl/soap12/";s:4:"http";s:37:"http://schemas.xmlsoap.org/wsdl/http/";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";}s:14:"usedNamespaces";a:0:{}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}}}}s:13:"currentSchema";r:5;s:7:"message";a:107:{i:0;a:1:{s:5:"cdata";s:1108:"
+  
+    
+      
+        
+          
+            
+            
+            
+            
+          
+        
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+          
+        
+      
+      
+        
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
+      
+      
+        
+          
+            
+            
+            
+            
+            
+          
+        
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+          
+            
+            
+            
+            
+            
+          
+        
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+          
+            
+            
+            
+            
+            
+          
+        
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+          
+            
+            
+            
+          
+        
+      
+      
+        
+          
+            
+          
+        
+      
+    
+  
+      
+        ";}i:1;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:2;a:1:{s:5:"cdata";s:3:"
+  ";}i:3;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:4;a:1:{s:5:"cdata";s:3:"
+  ";}i:5;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:6;a:1:{s:5:"cdata";s:3:"
+  ";}i:7;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:8;a:1:{s:5:"cdata";s:3:"
+  ";}i:9;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:10;a:1:{s:5:"cdata";s:3:"
+  ";}i:11;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:12;a:1:{s:5:"cdata";s:3:"
+  ";}i:13;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:14;a:1:{s:5:"cdata";s:3:"
+  ";}i:15;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:16;a:1:{s:5:"cdata";s:3:"
+  ";}i:17;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:18;a:1:{s:5:"cdata";s:3:"
+  ";}i:19;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:20;a:1:{s:5:"cdata";s:3:"
+  ";}i:21;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:22;a:1:{s:5:"cdata";s:3:"
+  ";}i:23;a:1:{s:5:"cdata";s:5:"
+    ";}i:24;a:1:{s:5:"cdata";s:7:"
+      ";}i:25;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:26;a:1:{s:5:"cdata";s:5:"
+    ";}i:27;a:1:{s:5:"cdata";s:7:"
+      ";}i:28;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:29;a:1:{s:5:"cdata";s:5:"
+    ";}i:30;a:1:{s:5:"cdata";s:7:"
+      ";}i:31;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:32;a:1:{s:5:"cdata";s:5:"
+    ";}i:33;a:1:{s:5:"cdata";s:7:"
+      ";}i:34;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:35;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:36;a:1:{s:5:"cdata";s:7:"
+      ";}i:37;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:38;a:1:{s:5:"cdata";s:3:"
+  ";}i:39;a:1:{s:5:"cdata";s:5:"
+    ";}i:40;a:1:{s:5:"cdata";s:5:"
+    ";}i:41;a:1:{s:5:"cdata";s:7:"
+      ";}i:42;a:1:{s:5:"cdata";s:7:"
+      ";}i:43;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:44;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:45;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:46;a:1:{s:5:"cdata";s:5:"
+    ";}i:47;a:1:{s:5:"cdata";s:7:"
+      ";}i:48;a:1:{s:5:"cdata";s:7:"
+      ";}i:49;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:50;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:51;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:52;a:1:{s:5:"cdata";s:5:"
+    ";}i:53;a:1:{s:5:"cdata";s:7:"
+      ";}i:54;a:1:{s:5:"cdata";s:7:"
+      ";}i:55;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:56;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:57;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:58;a:1:{s:5:"cdata";s:5:"
+    ";}i:59;a:1:{s:5:"cdata";s:7:"
+      ";}i:60;a:1:{s:5:"cdata";s:7:"
+      ";}i:61;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:62;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:63;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:64;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:65;a:1:{s:5:"cdata";s:7:"
+      ";}i:66;a:1:{s:5:"cdata";s:7:"
+      ";}i:67;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:68;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:69;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:70;a:1:{s:5:"cdata";s:3:"
+  ";}i:71;a:1:{s:5:"cdata";s:5:"
+    ";}i:72;a:1:{s:5:"cdata";s:5:"
+    ";}i:73;a:1:{s:5:"cdata";s:7:"
+      ";}i:74;a:1:{s:5:"cdata";s:7:"
+      ";}i:75;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:76;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:77;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:78;a:1:{s:5:"cdata";s:5:"
+    ";}i:79;a:1:{s:5:"cdata";s:7:"
+      ";}i:80;a:1:{s:5:"cdata";s:7:"
+      ";}i:81;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:82;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:83;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:84;a:1:{s:5:"cdata";s:5:"
+    ";}i:85;a:1:{s:5:"cdata";s:7:"
+      ";}i:86;a:1:{s:5:"cdata";s:7:"
+      ";}i:87;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:88;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:89;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:90;a:1:{s:5:"cdata";s:5:"
+    ";}i:91;a:1:{s:5:"cdata";s:7:"
+      ";}i:92;a:1:{s:5:"cdata";s:7:"
+      ";}i:93;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:94;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:95;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:96;a:1:{s:5:"cdata";s:8:"
+  
+    ";}i:97;a:1:{s:5:"cdata";s:7:"
+      ";}i:98;a:1:{s:5:"cdata";s:7:"
+      ";}i:99;a:1:{s:5:"cdata";s:16:"
+      
+        ";}i:100;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:101;a:1:{s:5:"cdata";s:7:"
+      ";}i:102;a:1:{s:5:"cdata";s:1:"
+";}i:103;a:1:{s:5:"cdata";s:5:"
+    ";}i:104;a:1:{s:5:"cdata";s:12:"
+    
+      ";}i:105;a:1:{s:5:"cdata";s:3:"
+  ";}i:106;a:1:{s:5:"cdata";s:5:"
+    ";}}s:12:"complexTypes";a:0:{}s:8:"messages";a:10:{s:13:"GetNewsSoapIn";a:1:{s:10:"parameters";s:37:"http://datafeed.stockbiz.vn/:GetNews^";}s:14:"GetNewsSoapOut";a:1:{s:10:"parameters";s:45:"http://datafeed.stockbiz.vn/:GetNewsResponse^";}s:20:"GetCompanyNewsSoapIn";a:1:{s:10:"parameters";s:44:"http://datafeed.stockbiz.vn/:GetCompanyNews^";}s:21:"GetCompanyNewsSoapOut";a:1:{s:10:"parameters";s:52:"http://datafeed.stockbiz.vn/:GetCompanyNewsResponse^";}s:21:"GetIndustryNewsSoapIn";a:1:{s:10:"parameters";s:45:"http://datafeed.stockbiz.vn/:GetIndustryNews^";}s:22:"GetIndustryNewsSoapOut";a:1:{s:10:"parameters";s:53:"http://datafeed.stockbiz.vn/:GetIndustryNewsResponse^";}s:19:"GetSectorNewsSoapIn";a:1:{s:10:"parameters";s:43:"http://datafeed.stockbiz.vn/:GetSectorNews^";}s:20:"GetSectorNewsSoapOut";a:1:{s:10:"parameters";s:51:"http://datafeed.stockbiz.vn/:GetSectorNewsResponse^";}s:20:"GetNewsContentSoapIn";a:1:{s:10:"parameters";s:44:"http://datafeed.stockbiz.vn/:GetNewsContent^";}s:21:"GetNewsContentSoapOut";a:1:{s:10:"parameters";s:52:"http://datafeed.stockbiz.vn/:GetNewsContentResponse^";}}s:14:"currentMessage";s:21:"GetNewsContentSoapOut";s:16:"currentOperation";s:14:"GetNewsContent";s:9:"portTypes";a:1:{s:15:"NewsServiceSoap";a:5:{s:7:"GetNews";a:2:{s:5:"input";a:1:{s:7:"message";s:13:"GetNewsSoapIn";}s:6:"output";a:1:{s:7:"message";s:14:"GetNewsSoapOut";}}s:14:"GetCompanyNews";a:2:{s:5:"input";a:1:{s:7:"message";s:20:"GetCompanyNewsSoapIn";}s:6:"output";a:1:{s:7:"message";s:21:"GetCompanyNewsSoapOut";}}s:15:"GetIndustryNews";a:2:{s:5:"input";a:1:{s:7:"message";s:21:"GetIndustryNewsSoapIn";}s:6:"output";a:1:{s:7:"message";s:22:"GetIndustryNewsSoapOut";}}s:13:"GetSectorNews";a:2:{s:5:"input";a:1:{s:7:"message";s:19:"GetSectorNewsSoapIn";}s:6:"output";a:1:{s:7:"message";s:20:"GetSectorNewsSoapOut";}}s:14:"GetNewsContent";a:3:{s:5:"input";a:1:{s:7:"message";s:20:"GetNewsContentSoapIn";}s:6:"output";a:1:{s:7:"message";s:21:"GetNewsContentSoapOut";}s:7:"binding";a:1:{s:7:"message";s:0:"";}}}}s:15:"currentPortType";s:15:"NewsServiceSoap";s:8:"bindings";a:2:{s:15:"NewsServiceSoap";a:7:{s:8:"portType";s:15:"NewsServiceSoap";s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:10:"operations";a:5:{s:7:"GetNews";a:9:{s:4:"name";s:7:"GetNews";s:7:"binding";s:15:"NewsServiceSoap";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:35:"http://datafeed.stockbiz.vn/GetNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:13:"GetNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:37:"http://datafeed.stockbiz.vn/:GetNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:14:"GetNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:45:"http://datafeed.stockbiz.vn/:GetNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:14:"GetCompanyNews";a:9:{s:4:"name";s:14:"GetCompanyNews";s:7:"binding";s:15:"NewsServiceSoap";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:42:"http://datafeed.stockbiz.vn/GetCompanyNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:20:"GetCompanyNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:44:"http://datafeed.stockbiz.vn/:GetCompanyNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:21:"GetCompanyNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:52:"http://datafeed.stockbiz.vn/:GetCompanyNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:15:"GetIndustryNews";a:9:{s:4:"name";s:15:"GetIndustryNews";s:7:"binding";s:15:"NewsServiceSoap";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:43:"http://datafeed.stockbiz.vn/GetIndustryNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:21:"GetIndustryNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:45:"http://datafeed.stockbiz.vn/:GetIndustryNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:22:"GetIndustryNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:53:"http://datafeed.stockbiz.vn/:GetIndustryNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:13:"GetSectorNews";a:9:{s:4:"name";s:13:"GetSectorNews";s:7:"binding";s:15:"NewsServiceSoap";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:41:"http://datafeed.stockbiz.vn/GetSectorNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:19:"GetSectorNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:43:"http://datafeed.stockbiz.vn/:GetSectorNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:20:"GetSectorNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:51:"http://datafeed.stockbiz.vn/:GetSectorNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:14:"GetNewsContent";a:9:{s:4:"name";s:14:"GetNewsContent";s:7:"binding";s:15:"NewsServiceSoap";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:42:"http://datafeed.stockbiz.vn/GetNewsContent";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:20:"GetNewsContentSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:44:"http://datafeed.stockbiz.vn/:GetNewsContent^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:21:"GetNewsContentSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:52:"http://datafeed.stockbiz.vn/:GetNewsContentResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}}s:4:"name";s:17:"NewsServiceSoap12";s:4:"type";s:44:"http://datafeed.stockbiz.vn/:NewsServiceSoap";s:11:"bindingType";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";}s:17:"NewsServiceSoap12";a:5:{s:8:"portType";s:15:"NewsServiceSoap";s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:10:"operations";a:5:{s:7:"GetNews";a:9:{s:4:"name";s:7:"GetNews";s:7:"binding";s:17:"NewsServiceSoap12";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:35:"http://datafeed.stockbiz.vn/GetNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:13:"GetNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:37:"http://datafeed.stockbiz.vn/:GetNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:14:"GetNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:45:"http://datafeed.stockbiz.vn/:GetNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:14:"GetCompanyNews";a:9:{s:4:"name";s:14:"GetCompanyNews";s:7:"binding";s:17:"NewsServiceSoap12";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:42:"http://datafeed.stockbiz.vn/GetCompanyNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:20:"GetCompanyNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:44:"http://datafeed.stockbiz.vn/:GetCompanyNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:21:"GetCompanyNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:52:"http://datafeed.stockbiz.vn/:GetCompanyNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:15:"GetIndustryNews";a:9:{s:4:"name";s:15:"GetIndustryNews";s:7:"binding";s:17:"NewsServiceSoap12";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:43:"http://datafeed.stockbiz.vn/GetIndustryNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:21:"GetIndustryNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:45:"http://datafeed.stockbiz.vn/:GetIndustryNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:22:"GetIndustryNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:53:"http://datafeed.stockbiz.vn/:GetIndustryNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:13:"GetSectorNews";a:9:{s:4:"name";s:13:"GetSectorNews";s:7:"binding";s:17:"NewsServiceSoap12";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:41:"http://datafeed.stockbiz.vn/GetSectorNews";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:19:"GetSectorNewsSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:43:"http://datafeed.stockbiz.vn/:GetSectorNews^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:20:"GetSectorNewsSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:51:"http://datafeed.stockbiz.vn/:GetSectorNewsResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}s:14:"GetNewsContent";a:9:{s:4:"name";s:14:"GetNewsContent";s:7:"binding";s:17:"NewsServiceSoap12";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:10:"soapAction";s:42:"http://datafeed.stockbiz.vn/GetNewsContent";s:5:"style";s:8:"document";s:5:"input";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:20:"GetNewsContentSoapIn";s:5:"parts";a:1:{s:10:"parameters";s:44:"http://datafeed.stockbiz.vn/:GetNewsContent^";}}s:6:"output";a:3:{s:3:"use";s:7:"literal";s:7:"message";s:21:"GetNewsContentSoapOut";s:5:"parts";a:1:{s:10:"parameters";s:52:"http://datafeed.stockbiz.vn/:GetNewsContentResponse^";}}s:9:"transport";s:36:"http://schemas.xmlsoap.org/soap/http";s:13:"documentation";s:0:"";}}s:11:"bindingType";s:39:"http://schemas.xmlsoap.org/wsdl/soap12/";s:8:"endpoint";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";}}s:14:"currentBinding";s:17:"NewsServiceSoap12";s:5:"ports";a:2:{s:15:"NewsServiceSoap";a:3:{s:7:"binding";s:15:"NewsServiceSoap";s:8:"location";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:11:"bindingType";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";}s:17:"NewsServiceSoap12";a:3:{s:7:"binding";s:17:"NewsServiceSoap12";s:8:"location";s:44:"http://datafeed.stockbiz.vn/NewsService.asmx";s:11:"bindingType";s:39:"http://schemas.xmlsoap.org/wsdl/soap12/";}}s:11:"currentPort";s:17:"NewsServiceSoap12";s:6:"opData";a:0:{}s:6:"status";s:7:"service";s:13:"documentation";b:0;s:8:"endpoint";s:0:"";s:6:"import";a:0:{}s:6:"parser";i:0;s:8:"position";i:107;s:5:"depth";i:-1;s:11:"depth_array";a:4:{i:0;i:102;i:1;i:105;i:2;i:106;i:3;i:101;}s:9:"proxyhost";b:0;s:9:"proxyport";b:0;s:13:"proxyusername";b:0;s:13:"proxypassword";b:0;s:7:"timeout";i:0;s:16:"response_timeout";i:30;s:12:"curl_options";a:0:{}s:8:"use_curl";b:0;s:8:"username";s:0:"";s:8:"password";s:0:"";s:8:"authtype";s:0:"";s:11:"certRequest";a:0:{}s:5:"title";s:6:"NuSOAP";s:7:"version";s:5:"0.7.3";s:8:"revision";s:18:"$Revision: 1.114 $";s:9:"error_str";s:0:"";s:9:"debug_str";s:32218:"2009-09-07 23:49:34.933862 wsdl: ctor wsdl=http://datafeed.stockbiz.vn/NewsService.asmx?WSDL timeout=0 response_timeout=30
+2009-09-07 23:49:34.934325 wsdl: parse and process WSDL path=http://datafeed.stockbiz.vn/NewsService.asmx?WSDL
+2009-09-07 23:49:34.934582 wsdl: parse WSDL at path=http://datafeed.stockbiz.vn/NewsService.asmx?WSDL
+2009-09-07 23:49:34.934838 wsdl: getting WSDL http(s) URL http://datafeed.stockbiz.vn/NewsService.asmx?WSDL
+2009-09-07 23:49:34.935128 soap_transport_http: ctor url=http://datafeed.stockbiz.vn/NewsService.asmx?WSDL use_curl= curl_options:
+array(0) {
+}
+2009-09-07 23:49:34.935921 soap_transport_http: parsed URL scheme = http
+2009-09-07 23:49:34.936176 soap_transport_http: parsed URL host = datafeed.stockbiz.vn
+2009-09-07 23:49:34.936466 soap_transport_http: parsed URL path = /NewsService.asmx
+2009-09-07 23:49:34.936718 soap_transport_http: parsed URL query = WSDL
+2009-09-07 23:49:34.936978 soap_transport_http: set header Host: datafeed.stockbiz.vn
+2009-09-07 23:49:34.937500 soap_transport_http: set header User-Agent: NuSOAP/0.7.3 (1.114)
+2009-09-07 23:49:34.937752 soap_transport_http: set header Accept-Encoding: gzip, deflate
+2009-09-07 23:49:34.938573 soap_transport_http: set header Connection: close
+2009-09-07 23:49:34.939396 soap_transport_http: entered send() with data of length: 0
+2009-09-07 23:49:34.939646 soap_transport_http: connect connection_timeout 0, response_timeout 30, scheme http, host datafeed.stockbiz.vn, port 80
+2009-09-07 23:49:34.939891 soap_transport_http: calling fsockopen with host datafeed.stockbiz.vn connection_timeout 0
+2009-09-07 23:49:35.985408 soap_transport_http: set response timeout to 30
+2009-09-07 23:49:35.985697 soap_transport_http: socket connected
+2009-09-07 23:49:35.985940 soap_transport_http: set header Content-Length: 0
+2009-09-07 23:49:35.986191 soap_transport_http: HTTP request: GET /NewsService.asmx?WSDL HTTP/1.1
+2009-09-07 23:49:35.986520 soap_transport_http: HTTP header: Host: datafeed.stockbiz.vn
+2009-09-07 23:49:35.986775 soap_transport_http: HTTP header: User-Agent: NuSOAP/0.7.3 (1.114)
+2009-09-07 23:49:35.987021 soap_transport_http: HTTP header: Accept-Encoding: gzip, deflate
+2009-09-07 23:49:35.987246 soap_transport_http: HTTP header: Connection: close
+2009-09-07 23:49:35.987627 soap_transport_http: HTTP header: Content-Length: 0
+2009-09-07 23:49:35.988003 soap_transport_http: wrote data to socket, length = 171
+2009-09-07 23:49:36.034385 soap_transport_http: read line of 17 bytes: HTTP/1.1 200 OK
+2009-09-07 23:49:36.034679 soap_transport_http: read line of 35 bytes: Cache-Control: private, max-age=0
+2009-09-07 23:49:36.034922 soap_transport_http: read line of 19 bytes: Connection: close
+2009-09-07 23:49:36.035205 soap_transport_http: read line of 37 bytes: Date: Mon, 07 Sep 2009 15:47:25 GMT
+2009-09-07 23:49:36.035941 soap_transport_http: read line of 39 bytes: Content-Type: text/xml; charset=utf-8
+2009-09-07 23:49:36.036215 soap_transport_http: read line of 27 bytes: Server: Microsoft-IIS/6.0
+2009-09-07 23:49:36.036495 soap_transport_http: read line of 23 bytes: X-Powered-By: ASP.NET
+2009-09-07 23:49:36.036742 soap_transport_http: read line of 29 bytes: X-AspNet-Version: 2.0.50727
+2009-09-07 23:49:36.036981 soap_transport_http: read line of 24 bytes: Content-Encoding: gzip
+2009-09-07 23:49:36.037220 soap_transport_http: read line of 23 bytes: Vary: Accept-Encoding
+2009-09-07 23:49:36.037521 soap_transport_http: read line of 28 bytes: Transfer-Encoding: chunked
+2009-09-07 23:49:36.037765 soap_transport_http: read line of 2 bytes: 
+2009-09-07 23:49:36.038075 soap_transport_http: found end of headers after length 303
+2009-09-07 23:49:36.038398 soap_transport_http: want to read chunked content
+2009-09-07 23:49:36.038638 soap_transport_http: read chunk line of 3 bytes
+2009-09-07 23:49:36.038861 soap_transport_http: chunk length 10
+2009-09-07 23:49:36.039120 soap_transport_http: read buffer of 10 bytes
+2009-09-07 23:49:36.039410 soap_transport_http: read chunk terminator of 2 bytes
+2009-09-07 23:49:36.039705 soap_transport_http: read chunk line of 5 bytes
+2009-09-07 23:49:36.039928 soap_transport_http: chunk length 1259
+2009-09-07 23:49:36.040155 soap_transport_http: read buffer of 1259 bytes
+2009-09-07 23:49:36.040427 soap_transport_http: read chunk terminator of 2 bytes
+2009-09-07 23:49:36.040664 soap_transport_http: read chunk line of 3 bytes
+2009-09-07 23:49:36.040885 soap_transport_http: chunk length 0
+2009-09-07 23:49:36.041107 soap_transport_http: read body of length 1269
+2009-09-07 23:49:36.041362 soap_transport_http: received a total of 1572 bytes of data from server
+2009-09-07 23:49:36.041721 soap_transport_http: closed socket
+2009-09-07 23:49:36.041964 soap_transport_http: The gzinflate function exists
+2009-09-07 23:49:36.042274 soap_transport_http: The payload has been un-gzipped to 12318 bytes
+2009-09-07 23:49:36.042583 soap_transport_http: end of send()
+2009-09-07 23:49:36.042824 wsdl: got WSDL URL
+2009-09-07 23:49:36.043060 wsdl: Parse WSDL
+2009-09-07 23:49:36.043701 wsdl: Parsing WSDL schema
+2009-09-07 23:49:36.043967 nusoap_xmlschema: nusoap_xmlschema class instantiated, inside constructor
+2009-09-07 23:49:36.044341 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetNews type _GetNews_ContainedType
+2009-09-07 23:49:36.044585 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetNews to elements array
+2009-09-07 23:49:36.044855 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetNews named _GetNews_ContainedType
+2009-09-07 23:49:36.045192 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element userName of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.045472 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element userName to complexType _GetNews_ContainedType
+2009-09-07 23:49:36.045735 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element userName
+2009-09-07 23:49:36.046036 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element password of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.046273 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element password to complexType _GetNews_ContainedType
+2009-09-07 23:49:36.046575 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element password
+2009-09-07 23:49:36.046874 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element startDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.047124 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element startDate to complexType _GetNews_ContainedType
+2009-09-07 23:49:36.047432 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element startDate
+2009-09-07 23:49:36.047740 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element endDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.047971 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element endDate to complexType _GetNews_ContainedType
+2009-09-07 23:49:36.048219 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element endDate
+2009-09-07 23:49:36.048540 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetNews_ContainedType
+2009-09-07 23:49:36.048825 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetNews
+2009-09-07 23:49:36.049096 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetNewsResponse type _GetNewsResponse_ContainedType
+2009-09-07 23:49:36.049390 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetNewsResponse to elements array
+2009-09-07 23:49:36.049687 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetNewsResponse named _GetNewsResponse_ContainedType
+2009-09-07 23:49:36.050028 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element GetNewsResult of type http://datafeed.stockbiz.vn/:ArrayOfNews
+2009-09-07 23:49:36.050274 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetNewsResult to complexType _GetNewsResponse_ContainedType
+2009-09-07 23:49:36.050555 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetNewsResult
+2009-09-07 23:49:36.050836 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetNewsResponse_ContainedType
+2009-09-07 23:49:36.051088 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetNewsResponse
+2009-09-07 23:49:36.051387 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing named complexType ArrayOfNews
+2009-09-07 23:49:36.051727 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element News of type http://datafeed.stockbiz.vn/:News
+2009-09-07 23:49:36.051963 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element News to complexType ArrayOfNews
+2009-09-07 23:49:36.052354 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element News
+2009-09-07 23:49:36.052684 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType ArrayOfNews
+2009-09-07 23:49:36.052952 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing named complexType News
+2009-09-07 23:49:36.053276 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element NewsID of type http://www.w3.org/2001/XMLSchema:int
+2009-09-07 23:49:36.053561 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element NewsID to complexType News
+2009-09-07 23:49:36.053809 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element NewsID
+2009-09-07 23:49:36.054094 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element Title of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.054377 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element Title to complexType News
+2009-09-07 23:49:36.054657 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element Title
+2009-09-07 23:49:36.054944 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element Description of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.055198 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element Description to complexType News
+2009-09-07 23:49:36.055500 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element Description
+2009-09-07 23:49:36.055808 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element Date of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.056043 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element Date to complexType News
+2009-09-07 23:49:36.056309 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element Date
+2009-09-07 23:49:36.056618 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element Source of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.056870 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element Source to complexType News
+2009-09-07 23:49:36.057140 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element Source
+2009-09-07 23:49:36.057491 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element ImageUrl of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.057758 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element ImageUrl to complexType News
+2009-09-07 23:49:36.058015 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element ImageUrl
+2009-09-07 23:49:36.058346 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element GroupID of type http://www.w3.org/2001/XMLSchema:int
+2009-09-07 23:49:36.058594 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GroupID to complexType News
+2009-09-07 23:49:36.058842 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GroupID
+2009-09-07 23:49:36.059131 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element HasAttachedFile of type http://www.w3.org/2001/XMLSchema:boolean
+2009-09-07 23:49:36.059398 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element HasAttachedFile to complexType News
+2009-09-07 23:49:36.059665 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element HasAttachedFile
+2009-09-07 23:49:36.060423 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element AttachedFileName of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.060672 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element AttachedFileName to complexType News
+2009-09-07 23:49:36.060927 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element AttachedFileName
+2009-09-07 23:49:36.061227 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element AttachedFileExtension of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.061511 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element AttachedFileExtension to complexType News
+2009-09-07 23:49:36.061771 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element AttachedFileExtension
+2009-09-07 23:49:36.062051 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType News
+2009-09-07 23:49:36.062359 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetCompanyNews type _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.062607 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetCompanyNews to elements array
+2009-09-07 23:49:36.062884 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetCompanyNews named _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.063208 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element userName of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.063483 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element userName to complexType _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.063742 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element userName
+2009-09-07 23:49:36.064025 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element password of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.064365 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element password to complexType _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.064674 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element password
+2009-09-07 23:49:36.065002 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element symbol of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.065266 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element symbol to complexType _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.065717 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element symbol
+2009-09-07 23:49:36.066581 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element startDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.067375 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element startDate to complexType _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.067646 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element startDate
+2009-09-07 23:49:36.067977 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element endDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.068235 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element endDate to complexType _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.068534 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element endDate
+2009-09-07 23:49:36.069625 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetCompanyNews_ContainedType
+2009-09-07 23:49:36.069918 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetCompanyNews
+2009-09-07 23:49:36.070220 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetCompanyNewsResponse type _GetCompanyNewsResponse_ContainedType
+2009-09-07 23:49:36.070507 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetCompanyNewsResponse to elements array
+2009-09-07 23:49:36.070811 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetCompanyNewsResponse named _GetCompanyNewsResponse_ContainedType
+2009-09-07 23:49:36.071141 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element GetCompanyNewsResult of type http://datafeed.stockbiz.vn/:ArrayOfNews
+2009-09-07 23:49:36.071420 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetCompanyNewsResult to complexType _GetCompanyNewsResponse_ContainedType
+2009-09-07 23:49:36.071685 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetCompanyNewsResult
+2009-09-07 23:49:36.071966 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetCompanyNewsResponse_ContainedType
+2009-09-07 23:49:36.072218 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetCompanyNewsResponse
+2009-09-07 23:49:36.072542 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetIndustryNews type _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.072781 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetIndustryNews to elements array
+2009-09-07 23:49:36.073232 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetIndustryNews named _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.073628 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element userName of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.073891 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element userName to complexType _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.074147 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element userName
+2009-09-07 23:49:36.074483 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element password of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.074726 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element password to complexType _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.074975 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element password
+2009-09-07 23:49:36.075271 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element industryID of type http://www.w3.org/2001/XMLSchema:int
+2009-09-07 23:49:36.075563 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element industryID to complexType _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.075813 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element industryID
+2009-09-07 23:49:36.076111 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element startDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.076437 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element startDate to complexType _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.076706 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element startDate
+2009-09-07 23:49:36.076991 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element endDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.077228 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element endDate to complexType _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.077524 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element endDate
+2009-09-07 23:49:36.077834 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetIndustryNews_ContainedType
+2009-09-07 23:49:36.078098 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetIndustryNews
+2009-09-07 23:49:36.078418 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetIndustryNewsResponse type _GetIndustryNewsResponse_ContainedType
+2009-09-07 23:49:36.078685 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetIndustryNewsResponse to elements array
+2009-09-07 23:49:36.078957 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetIndustryNewsResponse named _GetIndustryNewsResponse_ContainedType
+2009-09-07 23:49:36.079329 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element GetIndustryNewsResult of type http://datafeed.stockbiz.vn/:ArrayOfNews
+2009-09-07 23:49:36.079583 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetIndustryNewsResult to complexType _GetIndustryNewsResponse_ContainedType
+2009-09-07 23:49:36.079834 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetIndustryNewsResult
+2009-09-07 23:49:36.080115 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetIndustryNewsResponse_ContainedType
+2009-09-07 23:49:36.080414 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetIndustryNewsResponse
+2009-09-07 23:49:36.080710 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetSectorNews type _GetSectorNews_ContainedType
+2009-09-07 23:49:36.080950 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetSectorNews to elements array
+2009-09-07 23:49:36.081219 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetSectorNews named _GetSectorNews_ContainedType
+2009-09-07 23:49:36.081598 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element userName of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.081834 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element userName to complexType _GetSectorNews_ContainedType
+2009-09-07 23:49:36.082087 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element userName
+2009-09-07 23:49:36.082421 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element password of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.082676 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element password to complexType _GetSectorNews_ContainedType
+2009-09-07 23:49:36.082941 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element password
+2009-09-07 23:49:36.083222 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element sectorID of type http://www.w3.org/2001/XMLSchema:int
+2009-09-07 23:49:36.083495 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element sectorID to complexType _GetSectorNews_ContainedType
+2009-09-07 23:49:36.083753 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element sectorID
+2009-09-07 23:49:36.084035 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element startDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.084282 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element startDate to complexType _GetSectorNews_ContainedType
+2009-09-07 23:49:36.084600 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element startDate
+2009-09-07 23:49:36.084916 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element endDate of type http://www.w3.org/2001/XMLSchema:dateTime
+2009-09-07 23:49:36.085159 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element endDate to complexType _GetSectorNews_ContainedType
+2009-09-07 23:49:36.085506 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element endDate
+2009-09-07 23:49:36.085857 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetSectorNews_ContainedType
+2009-09-07 23:49:36.086143 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetSectorNews
+2009-09-07 23:49:36.086486 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetSectorNewsResponse type _GetSectorNewsResponse_ContainedType
+2009-09-07 23:49:36.086725 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetSectorNewsResponse to elements array
+2009-09-07 23:49:36.087009 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetSectorNewsResponse named _GetSectorNewsResponse_ContainedType
+2009-09-07 23:49:36.087394 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element GetSectorNewsResult of type http://datafeed.stockbiz.vn/:ArrayOfNews
+2009-09-07 23:49:36.087643 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetSectorNewsResult to complexType _GetSectorNewsResponse_ContainedType
+2009-09-07 23:49:36.087961 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetSectorNewsResult
+2009-09-07 23:49:36.088255 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetSectorNewsResponse_ContainedType
+2009-09-07 23:49:36.088559 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetSectorNewsResponse
+2009-09-07 23:49:36.088832 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetNewsContent type _GetNewsContent_ContainedType
+2009-09-07 23:49:36.089063 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetNewsContent to elements array
+2009-09-07 23:49:36.089369 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetNewsContent named _GetNewsContent_ContainedType
+2009-09-07 23:49:36.089712 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element userName of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.089948 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element userName to complexType _GetNewsContent_ContainedType
+2009-09-07 23:49:36.090201 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element userName
+2009-09-07 23:49:36.090542 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element password of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.090780 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element password to complexType _GetNewsContent_ContainedType
+2009-09-07 23:49:36.091030 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element password
+2009-09-07 23:49:36.091345 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element newsID of type http://www.w3.org/2001/XMLSchema:int
+2009-09-07 23:49:36.091595 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element newsID to complexType _GetNewsContent_ContainedType
+2009-09-07 23:49:36.091846 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element newsID
+2009-09-07 23:49:36.092143 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetNewsContent_ContainedType
+2009-09-07 23:49:36.092432 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetNewsContent
+2009-09-07 23:49:36.092715 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing untyped element GetNewsContentResponse type _GetNewsContentResponse_ContainedType
+2009-09-07 23:49:36.092944 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetNewsContentResponse to elements array
+2009-09-07 23:49:36.093212 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing unnamed complexType for element GetNewsContentResponse named _GetNewsContentResponse_ContainedType
+2009-09-07 23:49:36.093582 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> processing typed element GetNewsContentResult of type http://www.w3.org/2001/XMLSchema:string
+2009-09-07 23:49:36.093818 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> add element GetNewsContentResult to complexType _GetNewsContentResponse_ContainedType
+2009-09-07 23:49:36.094066 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetNewsContentResult
+2009-09-07 23:49:36.094398 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing complexType _GetNewsContentResponse_ContainedType
+2009-09-07 23:49:36.094677 nusoap_xmlschema: <http://datafeed.stockbiz.vn/> done processing element GetNewsContentResponse
+2009-09-07 23:49:36.095157 wsdl: Parsing WSDL schema done
+2009-09-07 23:49:36.095545 wsdl: msg GetNewsSoapIn: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetNews
+2009-09-07 23:49:36.095898 wsdl: msg GetNewsSoapOut: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetNewsResponse
+2009-09-07 23:49:36.096241 wsdl: msg GetCompanyNewsSoapIn: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetCompanyNews
+2009-09-07 23:49:36.096701 wsdl: msg GetCompanyNewsSoapOut: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetCompanyNewsResponse
+2009-09-07 23:49:36.097044 wsdl: msg GetIndustryNewsSoapIn: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetIndustryNews
+2009-09-07 23:49:36.097402 wsdl: msg GetIndustryNewsSoapOut: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetIndustryNewsResponse
+2009-09-07 23:49:36.097748 wsdl: msg GetSectorNewsSoapIn: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetSectorNews
+2009-09-07 23:49:36.098095 wsdl: msg GetSectorNewsSoapOut: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetSectorNewsResponse
+2009-09-07 23:49:36.098638 wsdl: msg GetNewsContentSoapIn: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetNewsContent
+2009-09-07 23:49:36.099522 wsdl: msg GetNewsContentSoapOut: found part (with element) parameters: parameters,http://datafeed.stockbiz.vn/:GetNewsContentResponse
+2009-09-07 23:49:36.100379 wsdl: portType NewsServiceSoap operation: GetNews
+2009-09-07 23:49:36.100767 wsdl: portType NewsServiceSoap operation: GetCompanyNews
+2009-09-07 23:49:36.101186 wsdl: portType NewsServiceSoap operation: GetIndustryNews
+2009-09-07 23:49:36.101609 wsdl: portType NewsServiceSoap operation: GetSectorNews
+2009-09-07 23:49:36.102004 wsdl: portType NewsServiceSoap operation: GetNewsContent
+2009-09-07 23:49:36.102734 wsdl: current binding: NewsServiceSoap of portType: http://datafeed.stockbiz.vn/:NewsServiceSoap
+2009-09-07 23:49:36.103119 wsdl: current binding operation: GetNews
+2009-09-07 23:49:36.103667 wsdl: current binding operation: GetCompanyNews
+2009-09-07 23:49:36.104166 wsdl: current binding operation: GetIndustryNews
+2009-09-07 23:49:36.104676 wsdl: current binding operation: GetSectorNews
+2009-09-07 23:49:36.105130 wsdl: current binding operation: GetNewsContent
+2009-09-07 23:49:36.105677 wsdl: current binding: NewsServiceSoap12 of portType: http://datafeed.stockbiz.vn/:NewsServiceSoap
+2009-09-07 23:49:36.105980 wsdl: current binding operation: GetNews
+2009-09-07 23:49:36.106512 wsdl: current binding operation: GetCompanyNews
+2009-09-07 23:49:36.106972 wsdl: current binding operation: GetIndustryNews
+2009-09-07 23:49:36.107483 wsdl: current binding operation: GetSectorNews
+2009-09-07 23:49:36.107945 wsdl: current binding operation: GetNewsContent
+2009-09-07 23:49:36.108468 wsdl: current service: NewsService
+2009-09-07 23:49:36.108746 wsdl: current port: NewsServiceSoap
+2009-09-07 23:49:36.109068 wsdl: current port: NewsServiceSoap12
+2009-09-07 23:49:36.109430 wsdl: Parsing WSDL done
+2009-09-07 23:49:36.109699 wsdl: post-parse data gathering for GetNews
+2009-09-07 23:49:36.109958 wsdl: post-parse data gathering for GetCompanyNews
+2009-09-07 23:49:36.110221 wsdl: post-parse data gathering for GetIndustryNews
+2009-09-07 23:49:36.110518 wsdl: post-parse data gathering for GetSectorNews
+2009-09-07 23:49:36.110769 wsdl: post-parse data gathering for GetNewsContent
+2009-09-07 23:49:36.111022 wsdl: post-parse data gathering for GetNews
+2009-09-07 23:49:36.111270 wsdl: post-parse data gathering for GetCompanyNews
+2009-09-07 23:49:36.111571 wsdl: post-parse data gathering for GetIndustryNews
+2009-09-07 23:49:36.111830 wsdl: post-parse data gathering for GetSectorNews
+2009-09-07 23:49:36.112075 wsdl: post-parse data gathering for GetNewsContent
+";s:12:"charencoding";b:1;s:10:"debugLevel";i:9;s:16:"XMLSchemaVersion";s:32:"http://www.w3.org/2001/XMLSchema";s:16:"soap_defencoding";s:2:"-8";s:10:"namespaces";a:13:{s:8:"SOAP-ENV";s:41:"http://schemas.xmlsoap.org/soap/envelope/";s:3:"xsd";s:32:"http://www.w3.org/2001/XMLSchema";s:3:"xsi";s:41:"http://www.w3.org/2001/XMLSchema-instance";s:8:"SOAP-ENC";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"soap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:2:"tm";s:44:"http://microsoft.com/wsdl/mime/textMatching/";s:7:"soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:4:"mime";s:37:"http://schemas.xmlsoap.org/wsdl/mime/";s:3:"tns";s:28:"http://datafeed.stockbiz.vn/";s:1:"s";s:32:"http://www.w3.org/2001/XMLSchema";s:6:"soap12";s:39:"http://schemas.xmlsoap.org/wsdl/soap12/";s:4:"http";s:37:"http://schemas.xmlsoap.org/wsdl/http/";s:4:"wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";}s:14:"usedNamespaces";a:0:{}s:7:"typemap";a:6:{s:32:"http://www.w3.org/2001/XMLSchema";a:43:{s:6:"string";s:6:"string";s:7:"boolean";s:7:"boolean";s:5:"float";s:6:"double";s:6:"double";s:6:"double";s:7:"decimal";s:6:"double";s:8:"duration";s:0:"";s:8:"dateTime";s:6:"string";s:4:"time";s:6:"string";s:4:"date";s:6:"string";s:10:"gYearMonth";s:0:"";s:5:"gYear";s:0:"";s:9:"gMonthDay";s:0:"";s:4:"gDay";s:0:"";s:6:"gMonth";s:0:"";s:9:"hexBinary";s:6:"string";s:12:"base64Binary";s:6:"string";s:7:"anyType";s:6:"string";s:13:"anySimpleType";s:6:"string";s:16:"normalizedString";s:6:"string";s:5:"token";s:6:"string";s:8:"language";s:0:"";s:7:"NMTOKEN";s:0:"";s:8:"NMTOKENS";s:0:"";s:4:"Name";s:0:"";s:6:"NCName";s:0:"";s:2:"ID";s:0:"";s:5:"IDREF";s:0:"";s:6:"IDREFS";s:0:"";s:6:"ENTITY";s:0:"";s:8:"ENTITIES";s:0:"";s:7:"integer";s:7:"integer";s:18:"nonPositiveInteger";s:7:"integer";s:15:"negativeInteger";s:7:"integer";s:4:"long";s:7:"integer";s:3:"int";s:7:"integer";s:5:"short";s:7:"integer";s:4:"byte";s:7:"integer";s:18:"nonNegativeInteger";s:7:"integer";s:12:"unsignedLong";s:0:"";s:11:"unsignedInt";s:0:"";s:13:"unsignedShort";s:0:"";s:12:"unsignedByte";s:0:"";s:15:"positiveInteger";s:0:"";}s:35:"http://www.w3.org/2000/10/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:32:"http://www.w3.org/1999/XMLSchema";a:11:{s:2:"i4";s:0:"";s:3:"int";s:7:"integer";s:7:"boolean";s:7:"boolean";s:6:"string";s:6:"string";s:6:"double";s:6:"double";s:5:"float";s:6:"double";s:8:"dateTime";s:6:"string";s:11:"timeInstant";s:6:"string";s:12:"base64Binary";s:6:"string";s:6:"base64";s:6:"string";s:7:"ur-type";s:5:"array";}s:26:"http://soapinterop.org/xsd";a:1:{s:10:"SOAPStruct";s:6:"struct";}s:41:"http://schemas.xmlsoap.org/soap/encoding/";a:3:{s:6:"base64";s:6:"string";s:5:"array";s:5:"array";s:5:"Array";s:5:"array";}s:30:"http://xml.apache.org/xml-soap";a:1:{i:0;s:3:"Map";}}s:11:"xmlEntities";a:5:{s:4:"quot";s:1:""";s:3:"amp";s:1:"&";s:2:"lt";s:1:"<";s:2:"gt";s:1:">";s:4:"apos";s:1:"'";}s:9:"wsdl_info";a:10:{s:10:"xmlns:soap";s:37:"http://schemas.xmlsoap.org/wsdl/soap/";s:8:"xmlns:tm";s:44:"http://microsoft.com/wsdl/mime/textMatching/";s:13:"xmlns:soapenc";s:41:"http://schemas.xmlsoap.org/soap/encoding/";s:10:"xmlns:mime";s:37:"http://schemas.xmlsoap.org/wsdl/mime/";s:9:"xmlns:tns";s:28:"http://datafeed.stockbiz.vn/";s:7:"xmlns:s";s:32:"http://www.w3.org/2001/XMLSchema";s:12:"xmlns:soap12";s:39:"http://schemas.xmlsoap.org/wsdl/soap12/";s:10:"xmlns:http";s:37:"http://schemas.xmlsoap.org/wsdl/http/";s:15:"targetNamespace";s:28:"http://datafeed.stockbiz.vn/";s:10:"xmlns:wsdl";s:32:"http://schemas.xmlsoap.org/wsdl/";}s:20:"currentPortOperation";s:14:"GetNewsContent";s:8:"opStatus";s:6:"output";s:11:"serviceName";s:11:"NewsService";}

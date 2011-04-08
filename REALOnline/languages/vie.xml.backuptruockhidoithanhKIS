@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config name="vie">
+	<pages>
+		<page name="HEADER" title="">
+			<captions>
+				<caption name="LOGIN_STRING" value="Bạn đang đăng nhập tài khoản:" />
+				<caption name="EDIT_PROFILE" value="Sửa thông tin cá nhân" />
+				<caption name="LOGOUT" value="Thoát" />
+				<caption name="MENU_01" value="Tổng quan" />
+				<caption name="MENU_02" value="Đặt lệnh" />
+				<caption name="MENU_03" value="Lịch sử giao dịch" />
+				<caption name="MENU_04" value="Báo cáo" />
+				<caption name="MENU_05" value="Thông tin cá nhân" />
+				<caption name="MENU_06" value="Mở tài khoản" />
+				<caption name="MENU_07" value="Dữ liệu Metastock" />
+				<caption name="MENU_08" value="Ứng trước" />
+				<caption name="MENU_09" value="Bảng giá trực tuyến TP.HCM" />
+				<caption name="MENU_10" value="Bảng giá trực tuyến Hà Nội" />
+				<caption name="MENU_11" value="Cảnh báo" />
+				<caption name="MENU_12" value="Sao kê giao dịch chứng khoán" />
+				<caption name="MENU_13" value="Sao kê giao dịch tiền" />
+				<caption name="MENU_14" value="Dịch vụ" />
+				<caption name="MENU_15" value="Tải phần mềm" />
+			</captions>
+		</page>
+		<page name="FOOTER" title="">
+			<captions>
+				<caption name="MENU_01" value="Tổng quan" />
+				<caption name="MENU_02" value="Đặt lệnh" />
+				<caption name="MENU_03" value="Lịch sử giao dịch" />
+				<caption name="MENU_04" value="Báo cáo" />
+				<caption name="MENU_05" value="Thông tin cá nhân" />
+				<caption name="COPYRIGHT" value="Bản quyền thuộc Công ty Cổ phần Chứng khoán Gia Quyền (EPS) © 2007" />
+				<caption name="ADDRESS" value="Địa chỉ: 225 Bến Chương Dương, Q. 1, Tp. HCM - ĐT: (+84) 1900 1526 - Fax: (+84) 38 386 099" />
+			</captions>
+		</page>
+		<page name="RIGHT_COLUMN" title="">
+			<captions>
+				<caption name="TITLE_EPS" value="Thông tin từ EPS" />
+				<caption name="TITLE_MARKET" value="Thông tin thị trường" />
+			</captions>
+		</page>
+		<page name="LOGIN" title="ĐĂNG NHẬP TÀI KHOẢN">
+			<captions>
+				<caption name="USERNAME" value="Tài khoản:" />
+				<caption name="PASSWORD" value="Mật khẩu:" />
+				<caption name="VALIDSTR" value="Ký tự đặc biệt:" />
+				<caption name="FORGOT_PASSWORD" value="Quên mật khẩu" />
+				<caption name="ERR_ACCESS_DENIED" value="Tài khoản không hợp lệ" />
+				<caption name="ERR_VALIDSTR" value="Chuỗi ký tự đặc biệt không hợp lệ" />
+				<caption name="TIT_NOT_ACCOUNT" value="Bạn chưa có tài khoản tại EOT?" />
+				<caption name="TIT_OPEN_ACCOUNT" value="Đăng ký tài khoản tại EOT thật dễ dàng" />
+				<caption name="BTN_OPEN_ACCOUNT" value="Mở tài khoản" />
+				<caption name="BTN_LOGIN" value="Đăng nhập" />
+				<caption name="ADS_01" value="Đăng nhập vào EOT (Easy Online Trader), bạn có thể:" />
+				<caption name="ADS_02" value="Đặt lệnh trực tuyến một cách dễ dàng và nhanh chóng tại EPS." />
+				<caption name="ADS_03" value="Bảo mật thông tin giao dịch cũng như thông tin cá nhân." />
+				<caption name="ADS_04" value="Chỉnh sửa, xóa hoặc hủy các lệnh đã đặt." />
+				<caption name="ADS_05" value="Thống kê lịch sử giao dịch." />
+				<caption name="ADS_06" value="Sử dụng trực tiếp tài khoản tiền mặt tại Ngân hàng Đông Á &amp; Vietcombank để giao dịch." />
+				<caption name="ADS_07" value="Đặt lệnh cho ngày tiếp theo sau 17g00." />
+				<caption name="ADS_08" value="Dữ liệu MetaStock cuối ngày." />
+				<caption name="ADS_09" value="Ứng trước trực tuyến trong giờ giao dịch." />
+				<caption name="ADS_10" value="Bạn muốn giao dịch thử trên hệ thống EOT? " />
+				<caption name="ADS_11" value="Click vào đây" />
+				<caption name="ADS_12" value="(Phí ứng trước: 0.055%/ngày. Thời gian áp dụng 01.12.2010)." />
+				<caption name="ADS_13" value="Gởi Trading code qua e-mail." />
+				<caption name="ADS_14" value="30 phần quà dành cho 30 đánh giá Dịch vụ của EPS gửi về sớm nhất cho chúng tôi. Vui lòng Click vào đây để biết thêm chi tiết." />
+			</captions>
+		</page>
+		<page name="EDIT_INFORMATION" title="">
+			<captions>
+				<caption name="FULLNAME" value="Họ tên" />
+				<caption name="ADDRESS" value="Đ/c thường trú" />
+				<caption name="CONTACTADDRESS" value="Đ/c liên lạc" />
+				<caption name="MOBILE" value="ĐTDD" />
+				<caption name="PHONE" value="Điện thoại" />
+				<caption name="EMAIL" value="Email" />
+				<caption name="FAX" value="Fax" />
+				<caption name="BANHACCOUNT" value="Số TK ngân hàng" />
+				<caption name="BANKNAME" value="Tên ngân hàng" />
+				<caption name="CHANGEPASSWORD" value="Thay đổi mật khẩu cá nhân" />
+				<caption name="ACCOUNTINFO" value="Thông tin cá nhân" />
+				<caption name="NOTE_01" value="Những thông tin được đánh dấu " />
+				<caption name="NOTE_02" value=" là những thông tin bắt buộc cung cấp." />
+			</captions>
+		</page>
+		<page name="CHANGE_PASSWORD" title="THAY ĐỔI MẬT KHẨU">
+			<captions>
+				<caption name="OLDPASS" value="Mật khẩu cũ:" />
+				<caption name="NEWPASS" value="Mật khẩu mới:" />
+				<caption name="CONFIRMPASS" value="Xác nhận MK mới:" />
+				<caption name="CHANGEPASS" value="Đổi mật khẩu" />
+				<caption name="OK_CHANGEPASS" value="Thay đổi mật khẩu thành công" />
+				<caption name="ERR_OLDPASS" value="Mật khẩu cũ không đúng" />
+				<caption name="ERR_ACCESS_DENIED" value="Thông tin không hợp lệ" />
+				<caption name="ERR_NEWPASSNOTMATCH" value="Mật khẩu mới và Xác nhận MK mới không hợp lệ" />
+			</captions>
+		</page>
+		<page name="FORGOT_PASSWORD" title="QUÊN MẬT KHẨU">
+			<captions>
+				<caption name="GETEMAIL" value="Lấy lại mật khẩu" />
+				<caption name="ACCOUNTNO" value="Tài khoản" />
+				<caption name="EMAIL" value="Email" />
+				<caption name="ERR_INVALIDEMAIL" value="Tài khoản/Email không đúng" />
+				<caption name="MAIL_SUBJECT" value="Mật khẩu mới" />
+				<caption name="MAIL_CONTENT" value="Mật khẩu mới" />
+				<caption name="OK_SENDPASS" value="Mật khẩu mới đã gửi đến email của quý khách" />
+				<caption name="ERR_CANNOTSEND" value="Không thể gửi mật khẩu mới đến email của quý khách. Vui lòng thực hiện lại." />
+			</captions>
+		</page>
+		<page name="SUMMARY" title="">
+			<captions>
+				<caption name="TIT_MONEY_BALANCE" value="Tài khoản ngân hàng" />
+				<caption name="BANK_NAME" value="Ngân hàng" />
+				<caption name="BANK_ACCOUNT" value="Tài khoản ngân hàng" />
+				<caption name="MONEY_BALANCE" value="Số dư đầu kì(VND)" />
+				<caption name="AVAIL_BALANCE" value="Số dư có thể giao dịch (VND)" />
+				<caption name="BANK_LINKNAME" value="Liên kết" />
+				<caption name="BANK_HIDDEN" value="Bảo mật" />
+				<caption name="BANK_NOTE" value="(*) Thông tin về số dư tài khoản đang hiển thị được cung cấp bởi ngân hàng chỉ có tính chất tham khảo. EPS không chịu trách nhiệm về tính chính xác của số dư này." />
+				<caption name="TIT_STOCK_BALANCE" value="Chứng khoán đang sở hữu" />
+				<caption name="TIT_STOCK_TTBT" value="Chứng khoán chờ thanh toán" />
+				<caption name="STOCK_SYMBOL" value="Chứng khoán" />
+				<caption name="DATE" value="Ngày" />
+				<caption name="QUANTITY" value="Số lượng" />
+				<caption name="PRICE" value="Giá (VND)" />
+				<caption name="STOCK_NAME" value="Mã CK" />
+				<caption name="STATUS" value="Trạng thái" />
+				<caption name="STATUS_NORMAL" value="B.Thường" />
+				<caption name="STATUS_MORTAGED" value="Cầm cố" />
+				<caption name="AVERAGE_PRICE" value="Giá mua&lt;br /&gt;bình quân" />
+				<caption name="CURRENT_PRICE" value="Giá&lt;br /&gt;hiện tại" />
+				<caption name="PROFIT_CP" value="Lời (lỗ)/CP" />
+				<caption name="PROFIT_CK" value="Lời (lỗ)/CK" />
+				<caption name="LINKNAME" value="Liên kết" />
+				<caption name="TRADING_TYPE" value="Giao dịch" />
+				<caption name="TOTAL" value="Tổng cộng" />
+				<caption name="TRANSACTION_PROCESSING" value="Đang giao dịch" />
+				<caption name="AMOUNT_CLEARED" value="Tiền chờ thanh toán" />
+				<caption name="TIT_0001" value="Tổng giá giá trị bình quân" />
+				<caption name="TIT_0002" value="Số tiền giao dịch" />
+				<caption name="TIT_0003" value="Tổng cộng" />
+				<caption name="TIT_0004" value="Chương trình khuyến mãi" />
+				<caption name="TIT_0005" value="Tên" />
+				<caption name="TIT_0006" value="Loại hình&lt;br&gt;khuyến mãi" />
+				<caption name="TIT_0007" value="Thời gian" />
+				<caption name="TIT_0008" value="Số tiền phí" />
+				<caption name="TIT_0009" value="Bắt đầu" />
+				<caption name="TIT_0010" value="Kết thúc" />
+				<caption name="TIT_0011" value="Được tặng" />
+				<caption name="TIT_0012" value="Còn lại" />
+			</captions>
+		</page>
+		<page name="TRADING_ONLINE" title="">
+			<captions>
+				<caption name="LINKNAME" value="Liên kết" />
+				<caption name="TIT_STOCK" value="Mã chứng khoán:" />
+				<caption name="TIT_BANK" value="Mã NH" />
+				<caption name="BTN_ADD" value="Thêm" />
+				<caption name="BTN_SELECT_STOCK" value="Danh sách chứng khoán" />
+				<caption name="TIT_STOCK_EXCHANGE" value="Thị trường" />
+				<caption name="TIT_SESSION" value="Phiên" />
+				<caption name="TIT_QUANTITY" value="Số lượng" />
+				<caption name="TIT_DATE" value="Ngày" />
+				<caption name="TIT_ORDER_SIDE" value="Lệnh" />
+				<caption name="TIT_SHORT_STOCK" value="Mã CK" />
+				<caption name="TIT_NOTE" value="Ghi chú" />
+				<caption name="TIT_PRICE" value="Giá" />
+				<caption name="TIT_LIST_ORDERS" value="Các lệnh đã đặt" />
+				<caption name="TIT_NUMBER" value="STT" />
+				<caption name="TIT_TRADING_TYPE" value="Giao dịch" />
+				<caption name="TIT_STATUS" value="Trạng thái" />
+				<caption name="TIT_EDIT" value="Sửa" />
+				<caption name="TIT_DELETE" value="Xoá" />
+				<caption name="TIT_CANCEL" value="Hủy" />
+				<caption name="TIT_BUY" value="Mua" />
+				<caption name="TIT_SELL" value="Bán" />
+				<caption name="BTN_PUT_ORDER" value="Đặt lệnh" />
+				<caption name="BTN_EDIT_ORDER" value="Sửa lệnh" />
+				<caption name="BTN_CANCEL_ORDER" value="Hủy lệnh" />
+				<caption name="BTN_RESET" value="Xóa trắng" />
+				<caption name="TIT_PENDING" value="Lệnh đang chờ EPS duyệt" />
+				<caption name="TIT_APPROVED" value="Lệnh hợp lệ, đang chờ để chuyển qua sàn" />
+				<caption name="TIT_DENIED" value="Lệnh bị từ chối bởi phòng môi giới EPS" />
+				<caption name="TIT_TRANSFERED" value="Lệnh đã được chuyển qua sàn giao dịch" />
+				<caption name="TIT_EXPIRED" value="Lệnh không còn hiệu lực do quá thời gian giao dịch" />
+				<caption name="TIT_DELETED" value="Lệnh đã được xóa" />
+				<caption name="TIT_MATCHED" value="Lệnh đã khớp" />
+				<caption name="TIT_CANCELLED" value="Lệnh huỷ toàn phần" />
+				<caption name="TIT_UNMATCHED" value="Lệnh không khớp" />
+				<caption name="TIT_TRANSFERRING" value="Lệnh đang được chuyển qua sàn giao dịch" />
+				<caption name="TIT_PART_MATCHED" value="Lệnh khớp một phần" />
+				<caption name="TIT_PART_CANCELLED" value="Lệnh hủy một phần" />
+				<caption name="BTN_TRADING_CODE" value="Gởi Trading Code qua SMS" />
+				<caption name="BTN_TRADING_CODE_EMAIL" value="Gởi Trading Code qua E-Mail" />
+				<caption name="BTN_HELP_TRADING_CODE" value="Hướng dẫn về Trading Code" />
+				<caption name="TIT_OPEN_PRICE" value="Xác định giá mở cửa" />
+				<caption name="TIT_LAST_PRICE" value="Giao dịch liên tục" />
+				<caption name="TIT_CLOSE_PRICE" value="Xác định giá đóng cửa" />
+				<caption name="TIT_NEO" value="Giao dịch thỏa thuận" />
+				<caption name="TIT_PRIOR_PRICE" value="Giá&lt;br /&gt;tham&lt;br /&gt;chiếu" />
+				<caption name="TIT_CEILING" value="Giá trần" />
+				<caption name="TIT_FLOOR" value="Giá sàn" />
+				<caption name="TIT_MATCH_PRICE" value="Giá khớp" />
+				<caption name="TIT_CHANGE" value="Thay đổi" />
+				<caption name="TIT_MATCH_QUANTITY" value="KL khớp" />
+				<caption name="TIT_SHORT_QUANTITY" value="KL" />
+				<caption name="TIT_CODE" value="Mã số" />
+				<caption name="VALIDSTR" value="Ký tự" />
+				<caption name="ERR_VALIDSTR" value="Chuỗi ký tự đặc biệt không hợp lệ" />
+				<caption name="TIT_DECREASE" value="Giảm" />
+				<caption name="TIT_INCREASE" value="Tăng" />
+				<caption name="TIT_UNCHANGE" value="Không đổi" />
+				<caption name="TIT_CHART" value="Đồ thị" />
+				<caption name="TIT_NEWS" value="Tin tức" />
+				<caption name="TIT_NOTE_O1" value="Những thông tin được đánh dấu " />
+				<caption name="TIT_NOTE_O2" value=" là những thông tin bắt buộc cung cấp." />
+				<caption name="ORDER_STATUS" value="Giải thích về trạng thái lệnh" />
+				<caption name="AVAIL_BALANCE" value="Số dư có thể giao dịch? " />
+				<caption name="CONTENT_0001" value="Lệnh đang chờ EPS duyệt do không đủ tiền" />
+				<caption name="CONTENT_0002" value="Lệnh hợp lệ, đang chờ để chuyển qua sàn" />
+				<caption name="CONTENT_0003" value="Lệnh bị từ chối bởi phòng môi giới EPS" />
+				<caption name="CONTENT_0004" value="Lệnh đã được chuyển qua sàn giao dịch" />
+				<caption name="CONTENT_0005" value="Lệnh không còn hiệu lực do quá thời gian giao dịch" />
+				<caption name="CONTENT_0006" value="Lệnh đã được xóa" />
+				<caption name="CONTENT_0007" value="Lệnh đã khớp" />
+				<caption name="CONTENT_0008" value="Lệnh không khớp" />
+				<caption name="CONTENT_0009" value="Lệnh đang được chuyển qua sàn giao dịch" />
+				<caption name="CONTENT_0010" value="Lệnh khớp một phần" />
+				<caption name="CONTENT_0011" value="Lệnh hủy một phần" />
+				<caption name="CONTENT_0012" value="Lệnh hủy toàn phần" />
+				<caption name="CONTENT_0013" value="Đóng cửa sổ này" />
+			</captions>
+		</page>
+		<page name="HISTORY_TRADING" title="">
+			<captions>
+				<caption name="TIT_SHORT_STOCK" value="Mã CK" />
+				<caption name="TIT_LIST_ORDERS" value="Các lệnh đã đặt" />
+				<caption name="TIT_LIST_MATCH_ORDERS" value="Giao dịch khớp" />
+				<caption name="TIT_TRADING_TYPE" value="Giao dịch" />
+				<caption name="TIT_QUANTITY" value="Số lượng" />
+				<caption name="TIT_DATE" value="Ngày" />
+				<caption name="TIT_STATUS" value="Trạng thái" />
+				<caption name="TIT_CANCEL" value="Hủy" />
+				<caption name="TIT_BUY" value="Mua" />
+				<caption name="TIT_SELL" value="Bán" />
+				<caption name="TIT_SESSION" value="Phiên" />
+				<caption name="TIT_PRICE" value="Giá" />
+				<caption name="TIT_SUB_TOTAL" value="Tổng cộng" />
+				<caption name="TIT_AGENCY_FEE" value="Phí môi giới" />
+				<caption name="TTT_TOTAL" value="Tổng số tiền" />
+				<caption name="TIT_MONEY" value="Tiền" />
+				<caption name="TIT_DETAILS" value="Chi tiết giao dịch" />
+				<caption name="TIT_SEARCH_DETAILS" value="Lọc chi tiết giao dịch:" />
+				<caption name="TIT_FROM_DATE" value="Từ ngày" />
+				<caption name="TIT_TO_DATE" value="Đến ngày" />
+				<caption name="TIT_STOCK_EXCHANGE" value="Sàn" />
+				<caption name="BTN_SEARCH" value="Lọc" />
+				<caption name="TIT_PENDING" value="Lệnh đang chờ EPS duyệt" />
+				<caption name="TIT_APPROVED" value="Lệnh hợp lệ, đang chờ để chuyển qua sàn" />
+				<caption name="TIT_DENIED" value="Lệnh bị từ chối bởi phòng môi giới EPS" />
+				<caption name="TIT_TRANSFERED" value="Lệnh đã được chuyển qua sàn giao dịch" />
+				<caption name="TIT_EXPIRED" value="Lệnh không còn hiệu lực do quá thời gian giao dịch" />
+				<caption name="TIT_DELETED" value="Lệnh đã được xóa" />
+				<caption name="TIT_MATCHED" value="Lệnh đã khớp" />
+				<caption name="TIT_CANCELLED" value="Lệnh huỷ toàn phần" />
+				<caption name="TIT_UNMATCHED" value="Lệnh không khớp" />
+				<caption name="TIT_TRANSFERRING" value="Lệnh đang được chuyển qua sàn giao dịch" />
+				<caption name="TIT_PART_MATCHED" value="Lệnh khớp một phần" />
+				<caption name="TIT_PART_CANCELLED" value="Lệnh hủy một phần" />
+			</captions>
+		</page>
+		<page name="GET_STOCK_LIST" title="">
+			<captions>
+				<caption name="TIT_STOCK_LIST" value="Danh sách chứng khoán" />
+				<caption name="TIT_SELECT_ALL" value="Chọn tất cả" />
+				<caption name="BTN_SELECT" value="Cập nhật danh sách" />
+				<caption name="BTN_CLOSE_WINDOW" value="Đóng" />
+			</captions>
+		</page>
+		<page name="OPEN_ACCOUNT" title="Mở tài khoản">
+			<captions>
+				<caption name="BTN_NEXT" value="Tiếp tục" />
+				<caption name="BTN_PRE" value="Quay lại" />
+				<caption name="BTN_FINISH" value="Kết thúc" />
+				<caption name="TIT_YES" value="Có" />
+				<caption name="TIT_NO" value="Không" />
+				<caption name="TIT_MSG_01" value="Bạn có đang sở hữu tài khoản giao dịch chứng khoán tại một công ty chứng khoán ở Việt Nam không?" />
+				<caption name="TIT_MSG_02" value="Theo quy định hiện hành của UBCK nhà nước, khi tham gia TTCK VN mỗi khách hàng chỉ được mở một tài khoản giao dịch chứng khoán tại một công ty chứng khoán." />
+				<caption name="TIT_MSG_03" value="Tuy nhiên, bạn vẫn được chấp thuận mở tài khoản tại EPS. Và bạn nên đóng tài khoản mà bạn đang giao dịch sau khi bạn mở tài khoản tại EPS." />
+				<caption name="TIT_MSG_04" value="Mọi thắc mắc, xin quý khách vui lòng liên hệ : Phòng Môi giới – 84. 838 6068. ext: 1771 – 1770 – 1120." />
+				<caption name="TIT_MSG_05" value="Bạn hãy chọn loại tài khoản phù hợp nhất với mình:" />
+				<caption name="TIT_MSG_06" value="Quý khách vui lòng đọc kỹ những điều khoản bên dưới" />
+				<caption name="TIT_MSG_07" value="Tôi xin cam kết sự đồng ý và thi hành đúng với các điều khoản được nêu trên. " />
+				<caption name="TIT_MSG_08" value="Click vào đây để tải bản cam kết về" />
+				<caption name="TIT_MSG_09" value="Tôi cam kết tất cả thông tin đưa ra trong phiếu yêu cầu mở tài khoản là đúng sự thật và sẽ thông báo ngay cho Công ty khi phát sinh những thay đổi có liên quan." />
+				<caption name="TIT_MSG_10" value="Quý khách có thể" />
+				<caption name="TIT_MSG_11" value=" tải tập tin hợp đồng về " />
+				<caption name="TIT_MSG_12" value="Cám ơn quý khách đã lựa chọn dịch vụ của EPS!" />
+				<caption name="TIT_MSG_13" value="Tài khoản của quý khách đã được mở tại EPS, nhưng tài khoản chỉ có giá trị tạm thời trong vòng 72 giờ và chưa thể giao dịch cho đến khi quý khách mở tài khoản ngân hàng tại bất cứ chi nhánh nào của các ngân hàng có liên kết với EPS." />
+				<caption name="TIT_MSG_14" value="Các giấy tờ cần thiết:" />
+				<caption name="TIT_MSG_15" value="01 Mẫu đơn đăng ký mở tài khoản được in ra và có chữ ký của bạn." />
+				<caption name="TIT_MSG_16" value="02 Mẫu hợp đồng có chữ ký của bạn." />
+				<caption name="TIT_MSG_17" value="01 bản sao CMND hoặc hộ chiếu của bạn." />
+				<caption name="TIT_MSG_18" value="Mọi chi tiết vui lòng liên hệ số điện thoại: 08-8-386068" />
+				<caption name="TIT_ACCOUNT_TYPE_01" value="Tài khoản dành cho khách hàng cá nhân trong nước" />
+				<caption name="TIT_ACCOUNT_TYPE_02" value="Tài khoản dành cho khách hàng cá nhân nước ngoài" />
+				<caption name="SUB_MENU_01" value="Khuyến cáo" />
+				<caption name="SUB_MENU_02" value="Loại tài khoản" />
+				<caption name="SUB_MENU_03" value="Thông tin nhà đầu tư" />
+				<caption name="SUB_MENU_04" value="Cam kết" />
+				<caption name="SUB_MENU_05" value="Xem hợp đồng" />
+				<caption name="SUB_MENU_06" value="Thông báo" />
+				<caption name="TIT_NOTE_O1" value="Những thông tin được đánh dấu " />
+				<caption name="TIT_NOTE_O2" value=" là những thông tin bắt buộc cung cấp." />
+				<caption name="TIT_PERSONAL_INFORMATION" value="Thông tin cá nhân" />
+				<caption name="TIT_FIRST_NAME" value="Tên" />
+				<caption name="TIT_LAST_NAME" value="Họ" />
+				<caption name="TIT_DOB" value="Ngày sinh" />
+				<caption name="TIT_PLACE_BORN" value="Nơi sinh" />
+				<caption name="TIT_GENDER" value="Giới tính" />
+				<caption name="TIT_GENDER_MALE" value="Nam" />
+				<caption name="TIT_GENDER_FEMALE" value="Nữ" />
+				<caption name="TIT_CARD_NO" value="Số CMND/Hộ chiếu" />
+				<caption name="TIT_CARD_NO_DATE" value="Ngày cấp" />
+				<caption name="TIT_CARD_NO_ISSUER" value="Nơi cấp" />
+				<caption name="TIT_CONTACT_ADDRESS" value="Địa chỉ liên lạc" />
+				<caption name="TIT_PHONE" value="Điện thoại" />
+				<caption name="TIT_MOBILE" value="Điện thoại di động" />
+				<caption name="TIT_BANK_INFORMATION" value="Thông tin tài khoản ngân hàng" />
+				<caption name="TIT_BANK_ACCOUNT" value="Số tài khoản" />
+				<caption name="TIT_BANK_NAME" value="Tên ngân hàng" />
+				<caption name="TIT_COMPANY_NAME" value="Công ty CP Chứng khoán Gia Quyền (EPS)" />
+				<caption name="TIT_COMPANY_ADDRESS" value="225 Bến Chương Dương, Q.1, TP.HCM, Việt Nam" />
+				<caption name="TIT_COMPANY_PHONE" value="ĐT" />
+				<caption name="TIT_CONTRACT" value="HỢP ĐỒNG MỞ TÀI KHOẢN &lt;br/&gt;GIAO DỊCH CHỨNG KHOÁN" />
+				<caption name="TIT_COMMIT" value="Cam kết" />
+				<caption name="TIT_PRINT_CONTRACT" value="In hợp đồng" />
+				<caption name="TIT_DOWNLOAD_CONTRACT" value="Tải hợp đồng" />
+				<caption name="TIT_NO_BANK_ACCOUNT" value="Chưa có tài khoản ngân hàng" />
+				<caption name="ERROR_01" value="Vui lòng nhập thông tin bắt buộc" />
+				<caption name="ERROR_02" value="Vui lòng cam kết sự đồng ý và thi hành đúng với các điều khoản" />
+				<caption name="QD_01" value="Tôi đã xem và đồng ý với quy định trên" />
+				<caption name="TIT_NOTE" value="Ghi chú" />
+				<caption name="TIT_BANK_NOTE1" value="- Nếu quí khách hàng đã mở tài khoản tại các ngân hàng có liên kết với EPS, xin vui lòng đến chi nhánh ngân hàng gần nhất để đăng ký giấy ủy quyền trong vòng 5 ngày." />
+				<caption name="TIT_BANK_NOTE2" value="- Nếu quý khách hàng chưa mở tài khoản tại các ngân hàng có liên kết với EPS, xin vui lòng đến chi nhánh" />
+				<caption name="TIT_RESIDENT_ADDRESS" value="Địa chỉ thường trú" />
+				<caption name="TIT_ASSIGNER_INFORMATION" value="Thông tin người được ủy quyền" />
+				<caption name="TIT_ASSIGNER_NOTE" value="(Không bắt buộc nhưng nếu có phải nhập đầy đủ thông tin bắt buộc)" />
+				<caption name="TIT_ASSIGNER_PRIVILEGE" value="Quyền" />
+				<caption name="TIT_ASSIGNER_CLICK" value="Nhấn vào đây để mở/đóng form thông tin người ủy quyền" />
+				<caption name="TIT_ASSIGNER_CLICK1" value="Nhấn vào đây để đóng" />
+				<caption name="TIT_BANK_NOTE3" value="- Nếu quý khách hàng chưa mở tài khoản tại các ngân hàng có liên kết với EPS, xin vui lòng đến chi nhánh ngân hàng liên kết gần nhất để mở tài khoản. Quý khách có thể tải hướng dẫn mở tài khoản ngân hàng " />
+				<caption name="TIT_BANK_NOTE3_1" value="tại đây" />
+				<caption name="TIT_NOTE_O3" value="Quý khách hàng vui lòng gõ dấu khi nhập các thông tin" />
+				<caption name="CONTENT_01" value="Xác nhận &amp; Cam kết của Khách hàng:" />
+				<caption name="CONTENT_02" value="Bằng việc ký vào giấy đăng ký giao dịch trực tuyến tại công ty EPS, tôi yêu cầu Công ty Chứng khoán Gia Quyền (EPS) cung cấp dịch vụ đã được lựa chọn ở trên." />
+				<caption name="CONTENT_03" value="Tôi đã tìm hiểu và được hướng dẫn đầy đủ về các hình thức giao dịch chứng khoán của EPS và hoàn toàn tự nguyện đăng ký tham gia dịch vụ này." />
+				<caption name="CONTENT_04" value="Tôi hoàn toàn ý thức được những rủi ro có thể phát sinh từ việc giao dịch qua các hình thức trên và hoàn toàn đồng ý chịu mọi rủi ro khi sử dụng và thực hiện giao dịch chứng khoán bằng hình thức được lựa chọn." />
+				<caption name="CONTENT_05" value="Tôi hoàn toàn chấp nhận và đồng ý với những nội dung được ghi trên Phiếu lệnh phù hợp với chi tiết của lệnh đã được đặt qua hình thức giao dịch mà tôi đã lựa chọn đăng ký sử dụng." />
+				<caption name="CONTENT_06" value="Tôi sẽ tuân thủ đầy đủ và chính xác những hướng dẫn của EPS." />
+				<caption name="CONTENT_07" value="Khách hàng cam kết phải ký trước phiếu lệnh cho EPS trước nếu muốn giao dịch qua mạng." />
+				<caption name="CONTENT_08" value="Đề nghị quý khách hàng đối chiếu giao dịch trong cùng ngày trên tất cả các phương tiện thông báo kết quả khớp lệnh của EPS, nếu có sai xót vui lòng thông báo cho bộ phận môi giới. Trong vòng 3 ngày làm việc kể từ ngày giao dịch được thực hiện nếu EPS không nhận được ý kiến của quý khách hàng thì mặc nhiên những thông báo KQ khớp lệnh là đúng." />
+				<caption name="CONTENT_09" value="Trading Code là một chuỗi 5 ký tự ngẫu nhiên được gởi đến điện thoại di động của nhà đầu tư (đã được đăng kí lúc mở tài khoản) qua tin nhắn SMS." />
+				<caption name="CONTENT_10" value="Trading Code chỉ được gởi từ một trong hai số điện thoại &lt;b&gt;1 900 1526&lt;/b&gt; hoặc &lt;b&gt;0975001526&lt;/b&gt;" />
+				<caption name="CONTENT_11" value="Trading Code chỉ có hiệu lực trong vòng 24 giờ." />
+				<caption name="CONTENT_12" value="Nhà đầu tư khi đã yêu cầu gởi Trading Code thì phải &lt;b&gt;5 phút&lt;/b&gt; sau mới có thể yêu cầu gởi lại, &lt;b&gt;Trading Code mới sẽ thay thế Trading Code cũ.&lt;/b&gt;" />
+				<caption name="CONTENT_13" value="&lt;b&gt;Lời khuyên của EPS:&lt;/b&gt;&lt;br /&gt; Nhà đầu tư chỉ nên yêu cầu gởi Trading Code một lần vào đầu ngày và dùng Trading Code này để giao dịch trong suốt ngày hôm đó." />
+				<caption name="CONTENT_14" value="Đóng cửa sổ này" />
+				<caption name="CONTENT_15" value="" />
+			</captions>
+		</page>
+		<page name="ADVANCED_MONEY" title="Ứng trước">
+			<captions>
+				<caption name="TIT_ADVANCE_MAX" value="Số tiền ứng tối đa:" />
+				<caption name="TIT_FEE_MAX" value="Phí ứng tối đa:" />
+				<caption name="TIT_ADVANCE_MONEY" value="Số tiền cần ứng:" />
+				<caption name="TIT_INTRO" value="Hướng dẫn:" />
+				<caption name="TIT_STEP" value="Bước " />
+				<caption name="TIT_INTRO_1" value="Click vào ứng tiền trong danh sách giao dịch khớp lệnh." />
+				<caption name="TIT_INTRO_2" value="Nhập số tiền ứng trước tối thiểu 5.000.000 đồng." />
+				<caption name="TIT_INTRO_21" value="(Phí ứng trước: 0.055%/ngày. Thời gian áp dụng 01.12.2010)." />
+				<caption name="TIT_INTRO_3" value="Click vào thực hiện." />
+				<caption name="TIT_INTRO_4A" value="Login vào " />
+				<caption name="TIT_INTRO_4B" value=" để xác nhận hợp đồng ứng trước tại Đông Á." />
+				<caption name="TIT_INTRO_TIME" value="Thời gian ứng trước từ 8h00 đến 16h00 (trừ thứ 7, CN, ngày lễ)" />
+				<caption name="TIT_INTRO_MORE" value="Muốn biết thêm chi tiết xin quý khách vui lòng xem: " />
+				<caption name="TIT_INTRO_FILE" value="Hướng dẫn sử dụng ứng tiền Online" />
+				<caption name="TIT_DEALS" value="Danh sách giao dịch khớp" />
+				<caption name="BTN_IMPLEMENT" value="Thực hiện" />
+				<caption name="BTN_RESET" value="Xóa trắng" />
+				<caption name="TIT_DATE" value="Ngày GD" />
+				<caption name="TIT_SHORT_STOCK" value="Mã CK" />
+				<caption name="TIT_PRICE" value="Giá" />
+				<caption name="TIT_QUANTITY" value="Số lượng" />
+				<caption name="TIT_SUB_TOTAL" value="Tổng cộng" />
+				<caption name="TIT_ADVANCE_TOTAL" value="Số tiền có thể ứng" />
+				<caption name="TIT_ADVANCE_DAYS" value="Số ngày ứng" />
+				<caption name="TIT_ADVANCE_FEE" value="Phí ứng tối đa" />
+				<caption name="TIT_ADVANCE" value="Ứng tiền" />
+			</captions>
+		</page>
+
+		<page name="TRADING_CODE_NOTICE" title="">
+			<captions>
+				<caption name="MSG_01" value="Trading Code là một chuỗi 5 ký tự ngẫu nhiên được gởi đến điện thoại di động của nhà đầu tư (đã được đăng kí lúc mở tài khoản) qua tin nhắn SMS." />
+				<caption name="MSG_02" value="Trading Code chỉ được gởi từ một trong hai số điện thoại &lt;b&gt; 900 1526&lt;/b&gt; hoặc &lt;b&gt;0975001526&lt;/b&gt;" />
+				<caption name="MSG_03" value="Trading Code chỉ có hiệu lực trong vòng 24 giờ." />
+				<caption name="MSG_04" value="Nhà đầu tư khi đã yêu cầu gởi Trading Code thì phải &lt;b&gt;5 phút&lt;/b&gt; sau mới có thể yêu cầu gởi lại, &lt;b&gt;Trading Code mới sẽ thay thế Trading Code cũ.&lt;/b&gt;" />
+				<caption name="MSG_05" value="&lt;b&gt;Lời khuyên của EPS:&lt;/b&gt;&lt;br&gt; Nhà đầu tư chỉ nên yêu cầu gởi Trading Code một lần vào đầu ngày và dùng Trading Code này để giao dịch trong suốt ngày hôm đó." />
+				<caption name="BTN_CLOSE" value="Đóng cửa sổ này" />
+			</captions>
+		</page>
+
+		<page name="TRANSACTION_REPORT" title="">
+			<captions>
+				<caption name="TIT_DETAILS" value="Báo cáo chi tiết giao dịch tiền" />
+				<caption name="TIT_SEARCH_DETAILS" value="Lọc báo cáo:" />
+				<caption name="TIT_FROM_DATE" value="Từ ngày" />
+				<caption name="TIT_TO_DATE" value="Đến ngày" />
+				<caption name="TIT_FROM_DATE2" value="từ ngày" />
+				<caption name="TIT_TO_DATE2" value="đến ngày" />
+				<caption name="BTN_SEARCH" value="Lọc" />
+				<caption name="TIT_LIST" value="Chi tiết" />
+				<caption name="TIT_COUNT" value="STT" />
+				<caption name="TIT_TRADINGDATE" value="Ngày phát sinh" />
+				<caption name="TIT_TYPE" value="Loại giao dịch" />
+				<caption name="TIT_MONEY" value="Số tiền" />
+				<caption name="TIT_MONEY_W" value="Giảm" />
+				<caption name="TIT_MONEY_D" value="Tăng" />
+				<caption name="TIT_MONEY_AFTER_TRANS" value="Số dư" />
+				<caption name="TIT_PREVBALANCE" value="Số dư đầu kỳ" />
+				<caption name="TIT_NEXTBALANCE" value="Số dư cuối kỳ" />
+				<caption name="TIT_TOTAL_TRANS_MONEY" value="Cộng phát sinh trong kỳ" />
+				<caption name="TIT_DESCRIPTION" value="Diễn giải" />
+			</captions>
+		</page>
+
+		<page name="" title="">
+			<captions>
+				<caption name="" value="" />
+			</captions>
+		</page>
+	</pages>
+</config>

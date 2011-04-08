@@ -1,0 +1,36 @@
+<?php
+$_configs[ 'db_host' ] = '172.25.2.105';
+$_configs[ 'db_user' ] = 'eps_website';
+$_configs[ 'db_pass' ] = 'root@eps_website';
+$_configs[ 'db_name' ] = 'eps_website';
+$_configs[ 'db_prefix' ] = 'ws_';
+
+/*$_configs[ 'eps_db_host' ] = '172.25.2.250';
+$_configs[ 'eps_db_user' ] = 'goldengate';
+$_configs[ 'eps_db_pass' ] = 'goldenepsgateeps2009';
+$_configs[ 'eps_db_name' ] = 'tradingboard';
+$_configs[ 'eps_db_prefix' ] = '';*/
+
+$_configs[ 'eps_db_host' ] = '172.25.2.105';
+$_configs[ 'eps_db_user' ] = 'priceonline';
+$_configs[ 'eps_db_pass' ] = 'root@chipheo310308';
+$_configs[ 'eps_db_name' ] = 'tradingboard';
+$_configs[ 'eps_db_prefix' ] = '';
+
+$_configs[ 'stockbiz_db_host' ] = '172.25.2.105';
+$_configs[ 'stockbiz_db_user' ] = 'eps_website';
+$_configs[ 'stockbiz_db_pass' ] = 'root@eps_website';
+$_configs[ 'stockbiz_db_name' ] = 'stockbiz';
+$_configs[ 'stockbiz_db_prefix' ] = '';
+
+$_configs[ 'smtp' ] = 'mail.eps.com.vn';
+$_configs[ 'mail' ] = 'webmaster@eps.com.vn';
+$_configs[ 'mail_name' ] = 'EPS WEBSITE';
+$_configs[ 'mail_user' ] = 'webmaster@eps.com.vn';
+$_configs[ 'mail_pass' ] = 'alibaba300807';
+
+$_configs[ 'stockbiz_user' ] = 'eps';
+$_configs[ 'stockbiz_pass' ] = '123@eps';
+
+define ( '_ABSPATH_', dirname( __FILE__ ) );
+?>

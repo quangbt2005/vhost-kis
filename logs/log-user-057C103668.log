@@ -1,0 +1,21 @@
+<!-- Log file 057C10366811-2010 --!>
+
+ALL - 2010-11-15 09:51:12 --> CALL sp_CheckAccountExistForESMSClient('057C103668','7981043cd411c25ab49ba6178a6ed49e','277014') --> 0
+ALL - 2010-11-22 08:29:27 --> CALL sp_CheckAccountExistForESMSClient('057C103668','7981043cd411c25ab49ba6178a6ed49e','277014') --> 0
+ALL - 2010-11-23 08:56:27 --> CALL sp_CheckAccountExistForESMSClient('057C103668','7981043cd411c25ab49ba6178a6ed49e','277014') --> 0
+ALL - 2010-11-23 08:57:19 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 400, 23000, 1, 5, '', '2010-11-23', '0', '1', '057C103668') --> 0
+ALL - 2010-11-23 08:58:32 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23100, 1, 5, '', '2010-11-23', '0', '1', '057C103668') --> 0
+ALL - 2010-11-23 09:12:49 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 200, 24000, 1, 5, '', '2010-11-23', '0', '1', '057C103668') --> 0
+ALL - 2010-11-23 09:14:24 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 200, 23500, 1, 5, '', '2010-11-23', '0', '1', '057C103668') --> 0
+ALL - 2010-11-23 09:17:32 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23300, 1, 5, '', '2010-11-23', '0', '1', '057C103668') --> 0
+ALL - 2010-11-23 09:18:04 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23400, 1, 5, '', '2010-11-23', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 08:18:07 --> CALL sp_CheckAccountExistForESMSClient('057C103668','7981043cd411c25ab49ba6178a6ed49e','277014') --> 0
+ALL - 2010-11-24 08:19:22 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 24500, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 08:20:30 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 24300, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 08:21:15 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 24000, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 08:34:20 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23500, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 09:00:11 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23600, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 10:00:38 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23300, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+ALL - 2010-11-24 10:01:11 --> CALL sp_insertLOSellingOrderForHN('057C103668', 103, 100, 23400, 1, 5, '', '2010-11-24', '0', '1', '057C103668') --> 0
+
+5038 stp

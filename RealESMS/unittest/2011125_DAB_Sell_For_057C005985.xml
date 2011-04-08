@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllSell>
+  <Sell>
+    <scraccount>057C005985</scraccount>
+    <refno>730012</refno>
+    <receiver_account>0101000203</receiver_account>
+    <receiver_name>Trần Nguyễn Đình Hoàng</receiver_name>
+    <receiver_bank>DAB</receiver_bank>
+    <receiver_bank_city>CN Quan 1</receiver_bank_city>
+    <isDAB>1</isDAB>
+    <amount>11200000</amount>
+    <fee>44800</fee>
+    <scrdate>20110120151236</scrdate>
+    <transferdate>20110125</transferdate>
+  </Sell>
+</AllSell>
