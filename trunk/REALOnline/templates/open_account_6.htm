@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.:: Welcome to Easy Online Trading ::.</title>
+<link href="css/superfish.css" rel="stylesheet" media="all" type="text/css">
+<script language="javascript" src="javascripts/jquery/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/hoverIntent.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/superfish.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+	{literal}
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+        $j("ul.sf-menu").superfish({speed:       'fast'});
+  });
+	{/literal}
+</script>
+<script src="javascripts/hover.js" type="text/javascript"></script>
+<link href="css/standard.css" rel="stylesheet" media="all" type="text/css">
+<SCRIPT language="JavaScript1.2" src="javascripts/scroll.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<div id="pagewrap">
+	{php}include("header.php"){/php}
+	<div id="main">
+		<div id="content" style="height:550px;">
+      	<div id="openAccount">
+				<ul>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_01}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_02}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_03}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_04}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_05}</li>
+          <li class="active">{$pageinfo.CAPTIONS.SUB_MENU_06}</li>
+        </ul>
+        <br class="clear"/>
+        	<div class="cover">
+				 <div>{$contents}</div>
+				  <p class="dot" style="width:880px"></p>
+				<form id="form1" name="form1" method="post" action="">
+					  <p class="position">
+					  <input name="sb" type="submit" class="btnGo" value="{$pageinfo.CAPTIONS.BTN_FINISH}">
+					  </p>
+				</form>
+              </div>
+           </div>
+      </div>
+	</div>
+	{php}include("footer.php"){/php}
+</div>
+</body>
+</html>

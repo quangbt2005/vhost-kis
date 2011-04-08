@@ -1,0 +1,187 @@
+<?php
+	/** 
+	 * Define table name here, ORDER BY ALFABET
+	 */
+	define("TBL_ACCOUNT", "`account`");
+	define("TBL_ACCOUNT_DETAIL", "`account_detail`");
+	define("TBL_ADMIN_USERS", "`admin_users`");
+	define("TBL_ADVANCE_FEE", "`advance_fee`");
+	define("TBL_ADVANCE_PAPER", "`advance_paper`");
+	define("TBL_ADVANCE_PAPER_DETAIL", "`advance_paper_detail`");
+	define("TBL_AGENCY_FEE", "`agency_fee`");
+	define("TBL_ASSIGN", "`assign`");	
+	define("TBL_ASSIGN_PRIVILEGE", "`assign_privilege`");
+	define("TBL_BANK", "`bank`");
+	define("TBL_BANK_LOAN", "`bank_loan`");
+	define("TBL_BRANCH", "`branch`");
+	define("TBL_CITY", "`city`");
+	define("TBL_COLLECT_DEBT", "`collect_debt`");
+	define("TBL_COMPANY", "`company`");
+	define("TBL_COUNTRY", "`country`");
+	define("TBL_DEPARTMENT", "`department`");
+	define("TBL_DIVIDEND_PRIVILEGE", "`dividend_privilege`");
+	define("TBL_EMPLOYEE", "`employee`");
+	define("TBL_EMPLOYEE_FUNCTION", "`employee_function`");
+	define("TBL_EMPLOYEE_GROUP", "`employee_group`");
+	define("TBL_EPS_ACCOUNT_LOGIN", "`eps_account_login`");
+	define("TBL_EVENT", "`event`");
+	define("TBL_EVENT_TYPE", "`event_type`");
+	define("TBL_EXTERNAL_TRANSFER", "`external_transfer`");	
+	define("TBL_FROM_TYPE", "`from_type`");
+	define("TBL_FUNCTION", "`function`");
+	define("TBL_GD_TIME", "`gd_time`");
+	define("TBL_GROUP", "`group`");
+	define("TBL_GROUP_FUNCTION", "`group_function`");
+	define("TBL_INTERNAL_TRANSFER", "`internal_transfer`");
+	define("TBL_INVESTOR", "`investor`");
+	define("TBL_IP_ALLOWED", "`ip_allowed`");
+	define("TBL_IP_DENIED", "`ip_denied`");
+	define("TBL_JOB_CALENDAR", "`job_calendar`");
+	define("TBL_MARKET_STAT", "`market_stat`");
+	define("TBL_MONEY_BALANCE", "`money_balance`");
+	define("TBL_MONEY_SUPPLEMENT", "`money_supplement`");
+	define("TBL_MORTGAGE_CONTRACT", "`mortage_contract`");
+	define("TBL_MORTGAGE_CONTRACT_DETAIL", "`mortage_contract_detail`");
+	define("TBL_ORDER", "`order`");
+	define("TBL_ORDER_DETAIL", "`order_detail`");
+	define("TBL_ORDER_SIDE", "`order_side`");
+	define("TBL_ORDER_STYLE", "`order_style`");
+	define("TBL_ORDER_STOCK_STATUS", "`order_stock_status`");
+	define("TBL_PAYMENT_CONTRACT", "`payment_contract`");
+	define("TBL_PAYMENT_CONTRACT_DETAIL", "`payment_contract_detail`");
+	define("TBL_PAYMENT_TYPE", "`payment_type`");
+	define("TBL_PHONE_CODE", "`phone_code`");
+	define("TBL_POST_UNIT", "`post_unit`");
+	define("TBL_PRIVILEGE", "`privilege`");
+	define("TBL_RATE", "`rate`");
+	define("TBL_REFERENCE_VALUE", "`reference_value`");
+	define("TBL_SERVICE_MONTHLY_PAID", "`sms_service_monthly_paid_history`");
+	define("TBL_SPECIAL_DATE", "`special_date`");
+	define("TBL_SPECIAL_INVESTOR", "`special_investor`");
+	define("TBL_SPECIAL_RATE", "`special_rate`");
+	define("TBL_STOCK", "`stock`");
+	define("TBL_STOCK_BALANCE", "`stock_balance`");
+	define("TBL_STOCK_DETAIL", "`stock_detail`");
+	define("TBL_STOCK_EXCHANGE", "`stock_exchange`");
+	define("TBL_STOCK_KIND", "`stock_kind`");
+	define("TBL_STOCK_STATUS", "`stock_status`");
+	define("TBL_STOCK_SUPPLEMENT", "`stock_supplement`");
+	define("TBL_STOCK_SUPPLEMENT_DETAIL", "`stock_supplement_detail`");
+	define("TBL_WITHDRAWAL_DEPOSIT", "`withdrawal_deposit`");
+	
+//
+	define("ADMIN_USER_QUERY", " AND ". TBL_EMPLOYEE .".UserName != 'admin' ");
+	define("ADMIN_USER", "admin");
+	
+// Order
+	define("ORDER_BUY", "1");
+	define("ORDER_SELL", "2");
+	define("ORDER_CANCEL", "3");
+	define("ORDER_ATO", "1");
+	define("ORDER_ATC", "2");
+	define("ORDER_LO", "3");
+	define("ORDER_MP", "4");
+	
+	define("ORDER_PENDING", "1");
+	define("ORDER_APPROVED", "2");
+	define("ORDER_DENIED", "3");
+	define("ORDER_TRANSFERED", "4");
+	define("ORDER_EXPIRED", "5");
+	define("ORDER_DELETED", "6");
+	define("ORDER_MATCHED", "7");
+	define("ORDER_FAILED", "8");
+	define("ORDER_TRANSFERING", "9");
+	define("ORDER_INCOMPLETE_MATCHED", "10");
+	define("ORDER_CANCELED", "11");
+	define("ORDER_INCOMPLETE_CANCELED", "12");
+
+	define("MAX_SESSION_HCM", "4");
+	define("MAX_SESSION_HN", "1");
+	define("SESSION_1_START", "08:30");
+	define("SESSION_1_END", "08:44");
+	define("SESSION_2_START", "08:45");
+	define("SESSION_2_END", "10:29");
+	define("SESSION_3_START", "10:30");
+	define("SESSION_3_END", "10:45");
+	define("SESSION_4_START", "08:30");
+	define("SESSION_4_END", "11:00");
+
+	define("HN_SESSION_START", "08:30");
+	define("HN_SESSION_END", "11:00");
+
+	define("MAX_QUANTITY_HCM", "19990");
+	define("MAX_QUANTITY_HN", "4900");
+
+	define("MAX_ORDER_FEE", "0.0035" );
+
+// Assigner
+	define("LAW_ASSIGNER", "2");
+	define("ASSIGNER", "1");
+
+// stock' status
+	define("STOCK_NORMAL", "1");
+	define("STOCK_MORTAGED", "2");
+	define("STOCK_LOCKED", "3");
+
+//web
+	define("EXPIRED_TIME", "30");
+
+//folder	
+	define("SIGNATURE_PATH", "/home/vhosts/eSMSstorage/signature/");
+	define("CSV_PATH", "/home/vhosts/eSMSstorage/csv/");
+	//define("DAB_PATH", $_SERVER['DOCUMENT_ROOT'] ."/bank/dab/");
+	define("DAB_PATH", "/home/vhosts/eSMSstorage/bank/dab/");
+	define("SMS_PATH", "/home/vhosts/eSMSstorage/sms/");
+	define("ADVANCE_PATH", "/home/vhosts/eSMSstorage/advance/");
+	define("VCB_PATH", "/home/vhosts/eSMSstorage/bank/vcb/");
+	define("DEBUG_PATH", "/home/vhosts/eSMSstorage/debug/");
+	define("EVENT_PATH", "/home/vhosts/eSMSstorage/event/");
+	
+// advance paper: 
+define("ADVANCE_START", "07:59");
+define("ADVANCE_END", "15:59");
+define("ADVANCE_IPSFEE", "20000");
+
+//
+	define("PAGODA_ACCOUNT", "057P000001");
+
+  define("AGB_ID", "1");
+  define("DAB_ID", "2");
+  define("VCB_ID", "3");
+  define("BIDV_ID", "4");
+  define("ACB_ID", "5");
+  define("IVB_ID", "6");
+  define("EXI_ID", "7");
+  define("MB_ID", "8");
+  define("STB_ID", "9");
+  define("VIB_ID", "10");
+  define("EAB_ID", "11");
+  define("OCB_ID", "12");
+  define("SCB_ID", "13");
+  define("ANZ_ID", "14");
+  define("EPS_ID", "15");
+  define("NVB_ID", "18");
+  define("TCDM_ID", "17");
+	define("OFFLINE", "20");
+  
+ //BRAVO_TRANSACTION_TYPE
+  define("BRAVO_DIVIDENT_C", "M12.01");//Co tuc khach hang
+  define("BRAVO_DIVIDENT_P", "M12.02");// Co tuc tu doanh
+  define("BRAVO_MORTAGE", "M13.01"); // cam co
+  define("BRAVO_PAID_MORTAGE", "M13.02"); // thu no cam co
+  define("BRAVO_BUYING_STOCK", "M13.03"); // phat hanh them cp
+  define("BRAVO_ADVANCE_EPSFEE_C", "M12.01"); // phat hanh them cp
+  define("BRAVO_SMS_SERVICE", "M14.01"); // dich vu SMS
+  define("BRAVO_ODD_STOCK", "M16.01"); // dich vu SMS
+
+  define("BRAVO_DIVIDENT_C_EPS","M12.03");            // Co tuc khach hang co tai khoan tong
+  define("BRAVO_MORTAGE_EPS", "M13.04");              // Giai ngan cam co cho khach hang co tai khoan tong
+  define("BRAVO_PAID_MORTAGE_EPS", "M13.05");         // Thu no cam co khach hang co tai khoan tong
+  define("BRAVO_PAID_MORTAGE_INTEREST_EPS", "M13.07");// Thu lai cam co khach hang co tai khoan tong
+
+  define("BRAVO_QUOTA", "M20.01");                    // Cap han muc ngay T
+  define("BRAVO_QUOTA_DEBT_PAYMENT", "M20.02");       // Thu no han muc
+  define("BRAVO_QUOTA_INTEREST_PAYMENT", "M20.03");   // Thu lai han muc
+
+  define("VIRTUAL_BANK_BRAVO_BANKCODE", "61");
+?>

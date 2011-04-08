@@ -1,0 +1,58 @@
+ErrorDocument 404 /noi-dung/93/index.html
+ErrorDocument 400 /noi-dung/93/index.html
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(inc|ft|htaccess|tpl|s?p?cgi|pl)$">
+	Order allow,deny
+</FilesMatch>
+# Rewrite URL.
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteRule ^css/(.*).css$ templates/css/$1.css [L,QSA]
+	RewriteRule ^images/(.*)$ templates/images/$1 [L,QSA]	
+	RewriteRule ^js/(.*)$ templates/js/$1 [L,QSA]	
+	RewriteRule ^network.php$ lien-he/index.html [L,QSA]
+	RewriteRule ^trang-chu/index.html$ index.php [L,QSA]	
+	RewriteRule ^lien-he/index.html$ index.php?mod=contact [L,QSA]
+	RewriteRule ^tin-tuc/index.html$ index.php?mod=news [L,QSA]
+	RewriteRule ^tin-tuc/tim-kiem/(.*).html$ index.php?mod=news&page=search [L,QSA]
+	RewriteRule ^tin-tuc/chuyen-muc/(.*)/(.*).html$ index.php?mod=news&page=list&id=$1 [L,QSA]
+	RewriteRule ^tin-tuc/chi-tiet/(.*)/(.*).html$ index.php?mod=news&page=detail&id=$1 [L,QSA]
+	RewriteRule ^tin-tuc/tieu-diem/(.*).html$ index.php?mod=news&page=list&func=tieudiem [L,QSA]
+	RewriteRule ^tin-tuc/quan-tam/(.*).html$ index.php?mod=news&page=list&func=quantam [L,QSA]
+	RewriteRule ^tin-tuc/tin-eps/(.*).html$ index.php?mod=news&page=list&func=eps [L,QSA]
+	RewriteRule ^gioi-thieu/index.html$ index.php?mod=content&groupid=3 [L,QSA]
+	RewriteRule ^huong-dan/index.html$ index.php?mod=content&groupid=18 [L,QSA]
+	RewriteRule ^noi-dung/(.*)/(.*)/index.html$ index.php?mod=content&groupid=$1&id=$2 [L,QSA]	
+	RewriteRule ^noi-dung/(.*)/index.html$ index.php?mod=content&id=$1 [L,QSA]	
+	RewriteRule ^thong-ke/hose/index.html$ index.php?mod=securitiesservices&page=order_matching [L,QSA]	
+	RewriteRule ^thong-ke/hase/index.html$ index.php?mod=securitiesservices&page=order_matching&func=hase [L,QSA]	
+	RewriteRule ^thong-ke/thoa-thuan/hose/index.html$ index.php?mod=securitiesservices&page=put_through [L,QSA]
+	RewriteRule ^thong-ke/thoa-thuan/hase/index.html$ index.php?mod=securitiesservices&page=put_through&func=hase [L,QSA]	
+	RewriteRule ^dang-ky-nhan-tin/index.html$ index.php?mod=subscribe&page=register [L,QSA]		
+	#Linh vuc					
+	RewriteRule ^doanh-nghiep/linh-vuc/(.*)/index.html$ index.php?mod=companydata&page=industries&func=overview&sectorid=$1 [L,QSA]		
+	RewriteRule ^doanh-nghiep/linh-vuc/(.*)/tintuc.html$ index.php?mod=companydata&page=industries&func=news&sectorid=$1 [L,QSA]				
+	RewriteRule ^doanh-nghiep/linh-vuc/(.*)/xephang.html$ index.php?mod=companydata&page=companyrank&sectorid=$1 [L,QSA]								
+	RewriteRule ^doanh-nghiep/linh-vuc/(.*)/sosanh.html$ index.php?mod=companydata&page=industrystat&sectorid=$1 [L,QSA]
+	#Nganh	
+	RewriteRule ^doanh-nghiep/nganh/index.html$ index.php?mod=companydata&page=industries [L,QSA]
+	RewriteRule ^doanh-nghiep/nganh/sosanh.html$ index.php?mod=companydata&page=industrystat [L,QSA]
+	RewriteRule ^doanh-nghiep/nganh/(.*)/sosanh.html$ index.php?mod=companydata&page=industrystat&industryid=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/nganh/(.*)/index.html$ index.php?mod=companydata&page=industries&func=overview&industryid=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/nganh/(.*)/tintuc.html$ index.php?mod=companydata&page=industries&func=news&industryid=$1 [L,QSA]	
+	RewriteRule ^doanh-nghiep/nganh/(.*)/xephang.html$ index.php?mod=companydata&page=companyrank&industryid=$1 [L,QSA]								
+	#Cong ty
+	RewriteRule ^doanh-nghiep/cong-ty/index.html$ index.php?mod=companydata&page=company [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/overview.html$ index.php?mod=companydata&page=companydetail&func=overview&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/snapshot.html$ index.php?mod=companydata&page=companydetail&func=snapshot&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/majorholder.html$ index.php?mod=companydata&page=companydetail&func=majorholder&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/companynews.html$ index.php?mod=companydata&page=companydetail&func=companynews&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/financialhighlights.html$ index.php?mod=companydata&page=companydetail&func=financialhighlights&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/keystatistics.html$ index.php?mod=companydata&page=companydetail&func=keystatistics&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/cong-ty/(.*)/ratios.html$ index.php?mod=companydata&page=companydetail&func=ratios&symbol=$1 [L,QSA]
+	RewriteRule ^doanh-nghiep/tien-ich/loc-co-phieu.html$ index.php?mod=companydata&page=topmovers [L,QSA]
+</IfModule>

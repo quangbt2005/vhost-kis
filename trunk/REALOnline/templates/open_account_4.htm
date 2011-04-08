@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.:: Welcome to Easy Online Trading ::.</title>
+<link href="css/superfish.css" rel="stylesheet" media="all" type="text/css">
+<script language="javascript" src="javascripts/jquery/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/hoverIntent.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/superfish.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+	{literal}
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+        $j("ul.sf-menu").superfish({speed:       'fast'});
+  });
+	{/literal}
+</script>
+<script src="javascripts/hover.js" type="text/javascript"></script>
+<link href="css/standard.css" rel="stylesheet" media="all" type="text/css">
+<SCRIPT language="JavaScript1.2" src="javascripts/scroll.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<div id="pagewrap">
+	{php}include("header.php"){/php}
+	<div id="main">
+		<div id="content">
+            <div id="openAccount">
+				<ul>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_01}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_02}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_03}</li>
+          <li class="active">{$pageinfo.CAPTIONS.SUB_MENU_04}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_05}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_06}</li>
+        </ul>
+        <br class="clear"/>
+        <div class="cover">
+          <div class="error-msm1">{$error_msg}</div>
+          <h4>{$pageinfo.CAPTIONS.TIT_MSG_06}</h4>
+          <div class="window">
+						<span style="font-weight:bold; text-decoration:underline;">Xác nhận & Cam kết của Khách hàng:</span><br/><br/>
+                    <b>1.</b> Bằng việc ký vào giấy đăng ký giao dịch trực tuyến tại công ty KIS, tôi yêu cầu Công ty Chứng khoán KIS Việt Nam (KIS) cung cấp dịch vụ đã được lựa chọn ở trên.<br/><br/>
+                    <b>2.</b> Tôi đã tìm hiểu và được hướng dẫn đầy đủ về các hình thức giao dịch chứng khoán của KIS và hoàn toàn tự nguyện đăng ký tham gia dịch vụ này.<br/><br/>
+                    <b>3.</b> Tôi hoàn toàn ý thức được những rủi ro có thể phát sinh từ việc giao dịch qua các hình thức trên và hoàn toàn đồng ý chịu mọi rủi ro khi sử dụng và thực hiện giao dịch chứng khoán bằng hình thức được lựa chọn.<br/><br/>
+                    <b>4.</b> Tôi hoàn toàn chấp nhận và đồng ý với những nội dung được ghi trên Phiếu lệnh phù hợp với chi tiết của lệnh đã được đặt qua hình thức giao dịch mà tôi đã lựa chọn đăng ký sử dụng.<br/><br/>
+                    <b>5.</b> Tôi sẽ tuân thủ đầy đủ và chính xác những hướng dẫn của KIS.<br/><br/>
+                    <b>6.</b> Khách hàng cam kết phải ký trước phiếu lệnh cho KIS trước nếu muốn giao dịch qua mạng.><br/><br/>
+                    <b>7.</b> Đề nghị quý khách hàng đối chiếu giao dịch trong cùng ngày trên tất cả các phương tiện thông báo kết quả khớp lệnh của KIS, nếu có sai xót vui lòng thông báo cho bộ phận môi giới. Trong vòng 3 ngày làm việc kể từ ngày giao dịch được thực hiện nếu KIS không nhận được ý kiến của quý khách hàng thì mặc nhiên những thông báo KQ khớp lệnh là đúng.<br/>
+					</div>
+           <form id="form1" name="open_account" method="post">
+            <input type="checkbox" name="checkbox" id="checkbox"  class="radioInput"/>
+            <h5>
+            	{$pageinfo.CAPTIONS.TIT_MSG_07}
+            	<a href="downloads/camket.pdf" target="_blank">{$pageinfo.CAPTIONS.TIT_MSG_08}</a>
+            </h5>
+            <p class="dot" style="width:880px"></p>
+            <p class="position">
+            <input name="sb_pre" type="submit" class="btnGo" value="{$pageinfo.CAPTIONS.BTN_PRE}" >
+            <input name="sb_next" type="submit" class="btnGo" value="{$pageinfo.CAPTIONS.BTN_NEXT}">
+            </p>
+					</form>
+                </div>
+            </div>
+      </div>
+		<br class="clear">
+	</div>
+	{php}include("footer.php"){/php}
+</div>
+</body>
+</html>

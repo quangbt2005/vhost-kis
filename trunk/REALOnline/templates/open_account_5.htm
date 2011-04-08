@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.:: Welcome to Easy Online Trading ::.</title>
+<link href="css/superfish.css" rel="stylesheet" media="all" type="text/css">
+<script language="javascript" src="javascripts/jquery/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/hoverIntent.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/superfish.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+	{literal}
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+        $j("ul.sf-menu").superfish({speed:       'fast'});
+  });
+	{/literal}
+</script>
+<script src="javascripts/hover.js" type="text/javascript"></script>
+<link href="css/standard.css" rel="stylesheet" media="all" type="text/css">
+<SCRIPT language="JavaScript1.2" src="javascripts/scroll.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<div id="pagewrap">
+	{php}include("header.php"){/php}
+	<div id="main">
+		<div id="content">
+      <div id="openAccount">
+				<ul>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_01}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_02}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_03}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_04}</li>
+          <li class="active">{$pageinfo.CAPTIONS.SUB_MENU_05}</li>
+          <li>{$pageinfo.CAPTIONS.SUB_MENU_06}</li>
+        </ul>
+        <br class="clear"/>
+        <div class="cover">
+        <div class="contract"></div>
+			<fieldset>
+				  <img src="images/logo_KIS_mau_den.gif" />
+			</fieldset>
+			<fieldset>
+				<p></p>
+				  <div align="right"><b>{$pageinfo.CAPTIONS.TIT_COMPANY_NAME}</b><br />
+							{$pageinfo.CAPTIONS.TIT_COMPANY_ADDRESS}<br />
+							{$pageinfo.CAPTIONS.TIT_COMPANY_PHONE}: 08-8-386068 -
+				  Email: <a href="mailto:online@eps.com.vn">online@eps.com.vn</a>      </div>
+		  </fieldset>
+		  <br class="clear"/><br class="clear"/>
+		   <p class="dot" style="width:880px"></p>
+		  <div align="center">
+		   		<h6 style="text-align:center; font-size:20px; line-height:27px;">{$pageinfo.CAPTIONS.TIT_CONTRACT}</h6>
+		  </div>
+
+		<br class="clear"/><br class="clear"/>
+        <fieldset>
+		 <h6>{$pageinfo.CAPTIONS.TIT_PERSONAL_INFORMATION}</h6>
+            <p><label>TK</label><label class="labelname3">{$post_value.account_no}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_FIRST_NAME}</label><label class="labelname3">{$post_value.account_first_name}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_LAST_NAME}</label><label class="labelname3">{$post_value.account_last_name}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_DOB}</label><label class="labelname3">{$post_value.display_account_birthday}</label></p>
+            <p>
+            	<label>{$pageinfo.CAPTIONS.TIT_GENDER}</label>
+              {if $post_value.account_gender == 0}
+	            	<label class="labelname3">Nam</label>
+              {else}
+	            	<label class="labelname3">Nữ</label>
+               {/if}
+            </p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_CARD_NO}</label><label class="labelname3">{$post_value.account_cardno}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_CARD_NO_DATE}</label><label class="labelname3">{$post_value.display_account_cardno_date}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_CARD_NO_ISSUER}</label><label class="labelname3">{$post_value.account_cardno_issuer}</label></p>
+        </fieldset>
+        <fieldset>
+			<p></p>
+            <p>
+              <label>{$pageinfo.CAPTIONS.TIT_CONTACT_ADDRESS}</label>
+              <label class="labelname3">{$post_value.account_contact_address}</label>
+            </p>
+			<p>
+              <label>{$pageinfo.CAPTIONS.TIT_RESIDENT_ADDRESS}</label>
+              <label class="labelname3">{$post_value.account_resident_address}</label>
+            </p>
+            <p>
+              <label>{$pageinfo.CAPTIONS.TIT_PHONE}</label>
+              <label class="labelname3">{$post_value.account_phone}</label>
+            </p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_MOBILE}</label><label class="labelname3">{$post_value.account_mobile}</label></p>
+            <p><label>Fax:</label><label class="labelname3">{$post_value.account_fax}</label></p>
+            <p><label>Email:</label><label class="labelname3">{$post_value.account_email}</label></p>
+			<p></p>
+			<p></p>
+        </fieldset>
+		  <br class="clear"/><br class="clear"/>
+        <fieldset>
+			<h6>{$pageinfo.CAPTIONS.TIT_ASSIGNER_INFORMATION}</h6>
+            <p><label>{$pageinfo.CAPTIONS.TIT_FIRST_NAME}</label>
+            <label class="labelname3">{$post_value.assign_first_name}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_LAST_NAME}</label>
+            <label class="labelname3">{$post_value.assign_last_name}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_DOB}</label>
+            <label class="labelname3">{$post_value.display_assign_birthday}</label></p>
+
+            <p><label>{$pageinfo.CAPTIONS.TIT_CARD_NO}</label>
+            <label class="labelname3">{$post_value.assign_cardno}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_CARD_NO_DATE}</label>
+            <label class="labelname3">{$post_value.display_assign_cardno_date}</label></p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_CARD_NO_ISSUER}</label>
+            <label class="labelname3">{$post_value.assign_cardno_issuer}</label></p>
+        </fieldset>
+        <fieldset>
+			<p></p>
+            <p>
+              <label>{$pageinfo.CAPTIONS.TIT_CONTACT_ADDRESS}</label>
+              <label class="labelname3">{$post_value.assign_contact_address}</label>
+            </p>
+			<p>
+              <label>{$pageinfo.CAPTIONS.TIT_RESIDENT_ADDRESS}</label>
+              <label class="labelname3">{$post_value.assign_resident_address}</label>
+            </p>
+            <p>
+              <label>{$pageinfo.CAPTIONS.TIT_PHONE}</label>
+              <label class="labelname3">{$post_value.assign_phone}</label>
+            </p>
+            <p><label>{$pageinfo.CAPTIONS.TIT_MOBILE}</label>
+            <label class="labelname3">{$post_value.assign_mobile}</label></p>
+            <p><label>Fax:</label><label class="labelname3">{$post_value.assign_fax}</label></p>
+            <p><label>Email:</label><label class="labelname3">{$post_value.assign_email}</label></p>
+        </fieldset>
+        <br class="clear"/><br class="clear"/>
+
+        <fieldset>
+        <h6>{$pageinfo.CAPTIONS.TIT_BANK_INFORMATION}</h6>
+          <p>
+          	<label>{$pageinfo.CAPTIONS.TIT_BANK_NAME}</label>
+            <label class="labelname3">{$post_value.account_bank_name}</label>
+          </p>
+				  <p>
+          	<label>{$pageinfo.CAPTIONS.TIT_BANK_ACCOUNT}</label>
+            <label class="labelname3">{$post_value.account_bank_account}</label>
+          </p>
+        </fieldset>
+        <fieldset>
+        <h6>{$pageinfo.CAPTIONS.TIT_COMMIT}</h6>
+  <p>{$pageinfo.CAPTIONS.TIT_MSG_09}</p>
+        </fieldset>
+        <p class="dot" style="width:880px"></p>
+
+          <form id="form1" name="open_account" method="post">
+            <p class="position">
+              <input name="sb_pre" type="submit" class="btnGo" value="{$pageinfo.CAPTIONS.BTN_PRE}" >
+              <input name="sb_next" type="submit" class="btnGo" value="{$pageinfo.CAPTIONS.BTN_NEXT}">
+            </p>
+		  </form>
+        </div>
+    </div>
+      </div>
+		<br class="clear">
+	</div>
+	{php}include("footer.php"){/php}
+</div>
+</body>
+</html>
