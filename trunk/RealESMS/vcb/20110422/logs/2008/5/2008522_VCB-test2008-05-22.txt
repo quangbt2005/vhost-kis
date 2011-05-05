@@ -1,0 +1,4 @@
+<!-- Log file 5-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 142226255 Name HA  KIM QUAN Address  BankAccountNo 0071004449047 PartnerType C dtBirthDay 19841008 PlaceOfBirth  dtDateIssue 20040802 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C008178 State A CALL SP_OpenPrivateAccount_VCB
+('HA ','KIM QUAN','C','592/10 CONG HOA P.13 Q.TAN BINH','592/10 CONG HOA P.13 Q.TAN BINH','','','','19841008','142226255','20040802','','F','0071004449047','','VietComBank') ErrorCode 0000 2008-05-22 03:55:26

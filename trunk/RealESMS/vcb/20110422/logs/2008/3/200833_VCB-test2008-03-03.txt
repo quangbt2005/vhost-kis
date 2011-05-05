@@ -1,0 +1,3 @@
+<!-- Log file 3-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022583368 Name DANG  CAO PAUL Address  BankAccountNo 00071004348840 PartnerType C dtBirthDay 19731106 PlaceOfBirth  dtDateIssue 19970321 PlaceIssue  ZipCode  Country  Email dacapa2003@yahoo.com Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C009064 State A ErrorCode8057 2008-03-03 02:23:26

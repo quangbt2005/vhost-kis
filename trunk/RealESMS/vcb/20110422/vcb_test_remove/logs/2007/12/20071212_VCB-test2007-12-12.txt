@@ -1,0 +1,3 @@
+<!-- Log file 12-2007 --!>
+
+ --> 192.168.137.27 function_name OpenAccount Input PersonalCard 023267489 Name DUONG  PHUC TRUNG Address  BankAccountNo 00071000702860 PartnerType 2 dtBirthDay 19790505 PlaceOfBirth  dtDateIssue 19960521 PlaceIssue  ZipCode  Country  Email DUONGPHUCTRUNG@YAHOO.COM Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C009126 State A ErrorCode0000 2007-12-12 01:10:24

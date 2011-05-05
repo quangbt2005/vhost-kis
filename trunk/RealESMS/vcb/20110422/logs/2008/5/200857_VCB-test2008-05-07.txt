@@ -1,0 +1,4 @@
+<!-- Log file 5-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023791481 Name PHAM  MANH CUONG Address  BankAccountNo 0071004432311 PartnerType C dtBirthDay 19830215 PlaceOfBirth  dtDateIssue 20000323 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 7700255 MailingAddress  MailingPhone  Output Account057C002726 State A CALL SP_OpenPrivateAccount_VCB
+('PHAM ','MANH CUONG','C','44 BUI THI XUAN P.2 Q.TB TPHCM','44 BUI THI XUAN P.2 Q.TB TPHCM','','','','19830215','023791481','20000323','','F','0071004432311','','VietComBank') ErrorCode 0000 2008-05-07 03:20:18

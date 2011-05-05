@@ -1,0 +1,4 @@
+<!-- Log file 7-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 220907649 Name BUI  QUANG THONG Address  BankAccountNo 0071004497898 PartnerType C dtBirthDay 19751116 PlaceOfBirth  dtDateIssue 19911218 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C008445 State A CALL SP_OpenPrivateAccount_VCB
+('BUI ','QUANG THONG','C','73 VO TRU NHA TRANG','73 VO TRU NHA TRANG','','','','19751116','220907649','19911218','','F','0071004497898','','VietComBank') ErrorCode 0000 2008-07-02 08:53:33

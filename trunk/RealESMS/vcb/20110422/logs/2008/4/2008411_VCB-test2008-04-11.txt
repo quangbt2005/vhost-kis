@@ -1,0 +1,4 @@
+<!-- Log file 4-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 020610291 Name Thành Đinh Bá Address  BankAccountNo 0071004400209 PartnerType C dtBirthDay 19570615 PlaceOfBirth  dtDateIssue 19990913 PlaceIssue  ZipCode  Country  Email  Phone 0903907907 Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C007907 State A CALL SP_OpenPrivateAccount_VCB
+('DINH ','BA THANH','C','55B NGUYEN VAN THU QUAN 1 TP.HCM','55B NGUYEN VAN THU QUAN 1 TP.HCM','0903907907','','','19570615','020610291','19990913','','F','0071004400209','','VietComBank') ErrorCode 0000 2008-04-11 02:07:14

@@ -1,0 +1,3 @@
+<!-- Log file 2-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023650108 Name KIM  ANH TUAN Address  BankAccountNo 00071004320886 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 19980514 PlaceIssue HO CHI M ZipCode  Country  Email kimtuan234@yahoo.com Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C008286 State A ErrorCode0000 2008-02-13 04:12:30

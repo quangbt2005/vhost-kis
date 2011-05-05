@@ -1,0 +1,3 @@
+<!-- Log file 2-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 021578600 Name Loan Nguyễn Thị Kim Address  BankAccountNo 00071004317664 PartnerType C dtBirthDay 19650818 PlaceOfBirth  dtDateIssue 19990614 PlaceIssue  ZipCode  Country  Email  Phone 0909939766 Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C005755 State A ErrorCode0000 2008-02-12 09:19:05

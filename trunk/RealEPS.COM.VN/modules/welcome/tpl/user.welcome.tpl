@@ -33,7 +33,7 @@
                 <h4>
                     <span class="header"><img src="/images/transparent.png" class="icon_panel" style="margin-right:5px"/>Đăng nhập giao dịch trực tuyến EOT</span>
                 </h4>
-                <form action="https://online.eps.com.vn/login.php" method="post" name="frm_login">
+                <form action="https://online.kisvn.vn/login.php" method="post" name="frm_login">
                 <div class="panel_content panel_style" style="height: 155px;">
                     <ul class="form">
                         <li>
@@ -48,8 +48,8 @@
                             <a class="button" href="#" style="width: 100px; margin:auto;" onclick="document.frm_login.submit();this.blur();"><span>Đăng nhập</span></a>                                
                         </li>
                         <li style="text-align: right">
-                            <p><a href="https://online.eps.com.vn/forgot_password.php">Quên mật khẩu?</a></p>
-                            <p><a href="https://online.eps.com.vn/open_account_qd.php">Mở tài khỏan trực tuyến tại KIS?</a></p>
+                            <p><a href="https://online.kisvn.vn/forgot_password.php">Quên mật khẩu?</a></p>
+                            <p><a href="https://online.kisvn.vn/open_account_qd.php">Mở tài khỏan trực tuyến tại KIS?</a></p>
                         </li>
                     </ul>                                
                     <div class="clear"></div>

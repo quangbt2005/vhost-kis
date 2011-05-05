@@ -1,0 +1,67 @@
+Listen 80
+Listen 443
+
+ServerRoot /usr/local/apache2
+DocumentRoot /usr/local/apache2/htdocs
+
+User  nobody
+Group nobody
+
+Timeout 60
+KeepAlive On
+MaxKeepAliveRequests 500
+KeepAliveTimeout 2
+ 
+<IfModule prefork.c>
+        MaxClients       250
+        StartServers     40
+        MinSpareServers  250
+        MaxSpareServers  10000
+</IfModule>
+
+#MaxRequestsPerChild 10000
+
+ServerTokens ProductOnly
+
+LoadModule php5_module        modules/libphp5.so
+
+AddType application/x-httpd-php .php
+
+DirectoryIndex index.htm index.html index.php
+
+Include conf/virtualhosts.conf
+
+ScriptAlias /nagios/cgi-bin "/usr/local/nagios/sbin"
+
+<Directory "/usr/local/nagios/sbin">
+#  SSLRequireSSL
+   Options ExecCGI
+   AllowOverride None
+   Order allow,deny
+   Allow from all
+#  Order deny,allow
+#  Deny from all
+#  Allow from 127.0.0.1
+   AuthName "Nagios Access"
+   AuthType Basic
+   AuthUserFile /usr/local/nagios/etc/htpasswd.users
+   Require valid-user
+</Directory>
+
+Alias /nagios "/usr/local/nagios/share"
+
+<Directory "/usr/local/nagios/share">
+#  SSLRequireSSL
+   Options None
+   AllowOverride None
+   Order allow,deny
+   Allow from all
+#  Order deny,allow
+#  Deny from all
+#  Allow from 127.0.0.1
+   AuthName "Nagios Access"
+   AuthType Basic
+   AuthUserFile /usr/local/nagios/etc/htpasswd.users
+   Require valid-user
+</Directory>
+

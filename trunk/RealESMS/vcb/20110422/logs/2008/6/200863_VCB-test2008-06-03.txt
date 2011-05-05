@@ -1,0 +1,4 @@
+<!-- Log file 6-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 300989819 Name DANG  DINH NGUYEN Address  BankAccountNo 0071004463935 PartnerType C dtBirthDay 19781130 PlaceOfBirth  dtDateIssue 20071226 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C002207 State A CALL SP_OpenPrivateAccount_VCB
+('DANG ','DINH NGUYEN','C','35 NGUYEN HUE Q1 HCM','35 NGUYEN HUE Q1 HCM','','','','19781130','300989819','20071226','','F','0071004463935','','VietComBank') ErrorCode 0000 2008-06-03 02:10:08

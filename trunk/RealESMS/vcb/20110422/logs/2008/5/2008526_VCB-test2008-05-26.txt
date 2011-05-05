@@ -1,0 +1,4 @@
+<!-- Log file 5-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 024546684 Name BUI  VAN HIEU Address  BankAccountNo 0071004450836 PartnerType C dtBirthDay 19630220 PlaceOfBirth  dtDateIssue 20060925 PlaceIssue  ZipCode  Country  Email hieubui1963@yahoo.com.vn Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C007257 State A CALL SP_OpenPrivateAccount_VCB
+('BUI ','VAN HIEU','C','9 LAU 3 NGUYENTRI PHUONG P.6 Q.5 HCM','9 LAU 3 NGUYENTRI PHUONG P.6 Q.5 HCM','','','hieubui1963@yahoo.com.vn','19630220','024546684','20060925','','F','0071004450836','','VietComBank') ErrorCode 0000 2008-05-26 09:47:40

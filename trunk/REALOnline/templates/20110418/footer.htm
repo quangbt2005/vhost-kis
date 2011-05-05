@@ -1,0 +1,27 @@
+<div id="footer">
+	<p>{$pageinfo.CAPTIONS.COPYRIGHT}<br />
+		{$pageinfo.CAPTIONS.ADDRESS}<br />
+		Email: <a href="mailto:online@eps.com.vn">online@eps.com.vn</a></p>
+	 <ul>
+	<li><a href="summary.php">{$pageinfo.CAPTIONS.MENU_01}</a></li>
+		<li> | <a href="trading_online.php">{$pageinfo.CAPTIONS.MENU_02}</a></li>
+		<li> | <a href="history_trading.php">{$pageinfo.CAPTIONS.MENU_03}</a></li>
+		<li> | <a href="#">{$pageinfo.CAPTIONS.MENU_04}</a></li>
+		<li> | <a href="edit_information.php">{$pageinfo.CAPTIONS.MENU_05}</a></li>
+</ul>
+<br class="clear" />
+<br class="clear" />
+<!-- google analytics -->
+{literal}
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-5348315-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+{/literal}
+<span style="color:#f7f3f7">{php}echo file_get_contents("/home/vhosts/online/logs/ip.txt");{/php}</span> 
+</div>

@@ -1,0 +1,4 @@
+<!-- Log file 1-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 031051595 Name PHAM  THANH DUY Address  BankAccountNo 00071004290063 PartnerType 2 dtBirthDay 19800810 PlaceOfBirth  dtDateIssue 19960315 PlaceIssue  ZipCode  Country  Email thanhduyhp@yahoo.com Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C004936 State A ErrorCode0000 2008-01-22 09:41:12
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 012297425 Name  Address SO43 NGO12 CHUA BOC DONG DA HA NOI BankAccountNo  PartnerType C dtBirthDay 19851224 PlaceOfBirth  dtDateIssue 19991025 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account State A ErrorCode8013 2008-01-22 09:51:02

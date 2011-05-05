@@ -1,0 +1,628 @@
+<?php
+/**
+	Author: Diep Le Chi
+	Created date: 19/03/2007
+*/
+require_once('../includes.php');
+//require_once("../XML/Unserializer.php");
+class CVCBBank extends WS_Class{
+	var $_MDB2;
+	var $_MDB2_WRITE;
+	var $_ERROR_CODE;
+	var $items;
+	var $path =  '/home/vhosts/eSMS/htdocs/logs/';
+	var $ftp_server = '192.168.137.33';
+	var $ftp_user_name = 'giaquyen';
+	var $ftp_user_pass = 'quyengia';
+	/*
+		constructor
+	*/
+
+	function CVCBBank($check_ip) {
+		//initialize _MDB2
+		$this->_MDB2 = initDB() ;
+		//$this->_MDB2_WRITE = initWriteDB();
+		$this->_ERROR_CODE = $check_ip;
+		//$this->_TIME_ZONE = get_timezon();
+		$this->items = array();
+
+		$this->class_name = get_class($this);
+		$arr = array(
+					'sellfile' => array(
+										'input' => array('TradingDate'),
+                                        'output' => array()
+										),
+					'buyfile' => array(
+										'input' => array('TradingDate'),
+                                        'output' => array()
+										),
+					'LogFile' => array(
+										'input' => array('Type'),
+                                        'output' => array('FileContent')
+										),
+          'GetVSDFeeResult' => array(
+                    'input' => array(),
+                    'output' => array('Refno','OrderID','UnitCode','AccountNo','Amount','ErrorCode','Note')
+                    ),
+          'UpdateIsCollectedVSDFee' => array(
+                    'input' => array(),
+                    'output' => array('Refno','OrderID','UnitCode','AccountNo','Amount','VCBResult','Note','UpdateIsCollectedResult')
+                    ),
+				);
+		parent::__construct($arr);
+	}
+	/**
+	 *  __destruct
+	 */
+	function __destruct() {
+		//$this->_MDB2->disconnect();
+		//$this->_MDB2_WRITE->disconnect();
+
+	}
+	/* ----------------------------- Account Function --------------------------------- */
+
+
+	/**
+	 * Function sellfile	: create sellfile and store in folder and ftp to vcb sertver
+	 * Input 				: $TradingDate
+	 * OutPut 				:
+	 */
+	function sellfile($TradingDate)
+	{
+		$class_name = $this->class_name;
+		$function_name = 'sellfile';
+
+		if ( authenUser(func_get_args(), $this, $function_name) > 0 )
+			return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+
+		$date_array = getdate();
+		$csv_dir = $this->path.'vcb_kq/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.$date_array['year'].'/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.$date_array['mon'].'/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$filename = 'eps'.date('Ymd').'_sell'.'.vcbit';
+		$filepath = $csv_dir.$filename;
+
+		if(file_exists($filepath)===true)
+		{
+			// Da ton tai file
+			$this->_ERROR_CODE = 24003;
+		}else
+		{
+			$query = sprintf("select f_getTDate('%s',3) as selldate",$TradingDate);
+			$this->_MDB2->connect();
+			$result = $this->_MDB2->extended->getAll($query);
+			$this->_MDB2->disconnect();
+			$selldate=$result[0]['selldate'];
+			$query = sprintf("CALL sp_VCB_getAllSellingOrder('%s')",$selldate);
+			$this->_MDB2->connect();
+			$result = $this->_MDB2->extended->getAll($query);
+			$num_account =  count($result);
+			if($num_account>0){
+
+				//$fp = fopen($filepath.'.txt', 'w');
+				$message  = '';
+				if ( ! $fp = @fopen($filepath, "w"))
+				{
+					return FALSE;
+				}
+				for ($i=0; $i<$num_account; $i++) {
+
+						/*if ( ! file_exists($filepath))
+						{
+							$message .= "<!-- Log file ".$date_array['mon'].'-'.$date_array['year']." --!>\n\n";
+						}*/
+
+						$message .= $result[$i]['id'].";";
+						$message .= $result[$i]['makhop'].";";
+						$message .= $result[$i]['orderstockstatus'].";";
+						$message .= $result[$i]['accountno'].";";
+						$message .= $result[$i]['symbol'].";";
+						$message .= $result[$i]['price'].";";
+						$message .= $result[$i]['orderside'].";";
+						$message .= $result[$i]['orderdate'].";";
+						$message .= $result[$i]['loaitien'].";";
+						$message .= $result[$i]['chinhanh'].";";
+						$message .= $result[$i]['ngonngu'].";";
+						$message .= $result[$i]['tong'].";";
+						$message .= $result[$i]['loailenh'].";\n";
+				}
+				//print_r($message);
+				flock($fp, LOCK_EX);
+				fwrite($fp, $message);
+				flock($fp, LOCK_UN);
+				fclose($fp);
+
+				@chmod($filepath, 0644);
+
+				$conn_id = ftp_connect($this->ftp_server);
+
+				// login with username and password
+				$login_result = ftp_login($conn_id, $this->ftp_user_name, $this->ftp_user_pass);
+
+				// check connection
+				if ((!$conn_id) || (!$login_result)) {
+						/*echo "FTP connection has failed!";
+						echo "Attempted to connect to $ftp_server for user $ftp_user_name";
+						exit;*/
+						$this->_ERROR_CODE = 24001;
+					} else {
+						//echo "Connected to $ftp_server, for user $ftp_user_name";
+						$this->_ERROR_CODE = 0;
+					}
+				if($this->_ERROR_CODE == 0)
+				{
+					// upload the file
+					$source_file = $filepath;
+					$destination_file = 'IN/'.$filename;
+					$upload = ftp_put($conn_id, $destination_file, $source_file, FTP_BINARY);
+
+					// check upload status
+					if (!$upload) {
+							//echo "FTP upload has failed!";
+							$this->_ERROR_CODE = 24002;
+						} else {
+							//echo "Uploaded $source_file to $ftp_server as $destination_file";
+							$this->_ERROR_CODE = 0;
+						}
+
+					// close the FTP stream
+					ftp_close($conn_id);
+				}
+
+			}else{
+				// Khong co du lieu xuat qua VCB
+				$this->_ERROR_CODE = 24007;
+			}
+		}
+		return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+	}
+
+	/**
+	 * Function buyfile	: create buyfile and store in folder and ftp to vcb sertver
+	 * Input 				: $TradingDate
+	 * OutPut 				:
+	 */
+	function buyfile($TradingDate)
+	{
+		$class_name = $this->class_name;
+		$function_name = 'buyfile';
+
+		if ( authenUser(func_get_args(), $this, $function_name) > 0 )
+			return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+
+		$path = '';
+		$date_array = getdate();
+		$csv_dir = $this->path.'vcb_kq/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.$date_array['year'].'/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.$date_array['mon'].'/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$filename = 'eps'.date('Ymd').'_buy'.'.vcbit';
+		$filepath = $csv_dir.$filename;
+
+		if(file_exists($filepath)===true)
+		{
+			// Da ton tai file
+			$this->_ERROR_CODE = 24003;
+		}else
+		{
+			$query = sprintf("CALL sp_VCB_getAllBuyingOrder('%s')",$TradingDate);
+			$this->_MDB2->connect();
+			$result = $this->_MDB2->extended->getAll($query);
+			$num_account =  count($result);
+			if($num_account>0){
+
+				//$fp = fopen($filepath.'.txt', 'w');
+				$message  = '';
+				if ( ! $fp = @fopen($filepath, "w"))
+				{
+					return FALSE;
+				}
+				for ($i=0; $i<$num_account; $i++) {
+
+						$message .= $result[$i]['orderid'].";";
+						$message .= $result[$i]['makhop'].";";
+						$message .= $result[$i]['orderstockstatus'].";";
+						$message .= $result[$i]['accountno'].";";
+						$message .= $result[$i]['symbol'].";";
+						$message .= $result[$i]['price'].";";
+						$message .= $result[$i]['mua'].";";
+						$message .= $result[$i]['orderdate'].";";
+						$message .= $result[$i]['loaitien'].";";
+						$message .= $result[$i]['chinhanh'].";";
+						$message .= $result[$i]['ngonngu'].";";
+						$message .= $result[$i]['tong'].";";
+						$message .= $result[$i]['loailenh'].";\n";
+				}
+				//print_r($message);
+				flock($fp, LOCK_EX);
+				fwrite($fp, $message);
+				flock($fp, LOCK_UN);
+				fclose($fp);
+
+				@chmod($filepath, 0644);
+
+				$conn_id = ftp_connect($this->ftp_server);
+
+				// login with username and password
+				$login_result = ftp_login($conn_id, $this->ftp_user_name, $this->ftp_user_pass);
+
+				// check connection
+				if ((!$conn_id) || (!$login_result)) {
+						/*echo "FTP connection has failed!";
+						echo "Attempted to connect to $ftp_server for user $ftp_user_name";
+						exit;*/
+						$this->_ERROR_CODE = 24001;
+					} else {
+						//echo "Connected to $ftp_server, for user $ftp_user_name";
+						$this->_ERROR_CODE = 0;
+					}
+				if($this->_ERROR_CODE == 0)
+				{
+					// upload the file
+					$source_file = $filepath;
+					$destination_file = 'IN/'.$filename;
+					$upload = ftp_put($conn_id, $destination_file, $source_file, FTP_BINARY);
+
+					// check upload status
+					if (!$upload) {
+							//echo "FTP upload has failed!";
+							$this->_ERROR_CODE = 24002;
+						} else {
+							//echo "Uploaded $source_file to $ftp_server as $destination_file";
+							$this->_ERROR_CODE = 0;
+						}
+
+					// close the FTP stream
+					ftp_close($conn_id);
+				}
+
+
+			}else{
+				// Khong co du lieu xuat qua VCB
+				$this->_ERROR_CODE = 24007;
+			}
+		}
+		return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+	}
+
+	/**
+	 * Function logfile	: create sellfile and store in folder and ftp to vcb sertver
+	 * Input 				: $TradingDate
+	 * OutPut 				:
+	 */
+	function LogFile( $Type)
+	{
+		$class_name = $this->class_name;
+		$function_name = 'LogFile';
+
+		if ( authenUser(func_get_args(), $this, $function_name) > 0 )
+			return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+
+		$date_array = getdate();
+		$csv_dir = $this->path.'vcb_kq/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.'logs/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.$date_array['year'].'/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$csv_dir = $csv_dir.$date_array['mon'].'/';
+		if (!is_dir($csv_dir)){
+			mkdir( $csv_dir, 0755 );
+		}
+		$filename = 'eps'.date('Ymd').'_'.$Type.'_log.vcbit';
+		$filepath = $csv_dir.$filename;
+
+
+		$conn_id = ftp_connect($this->ftp_server);
+
+		// login with username and password
+		$login_result = ftp_login($conn_id, $this->ftp_user_name, $this->ftp_user_pass);
+
+		// check connection
+		if ((!$conn_id) || (!$login_result)) {
+			/*echo "FTP connection has failed!";
+			echo "Attempted to connect to $ftp_server for user $ftp_user_name";
+			exit;*/
+			$this->_ERROR_CODE = 24001;
+		} else {
+			// upload the file
+
+			$destination_file = $filepath;
+				// open some file to write to
+			$handle = fopen($destination_file, 'w');
+			$source_file = 'OUT/'.$filename;
+			// get the size of $file
+			$res = ftp_size($conn_id, $source_file);
+
+			if ($res != -1) {
+				$upload = ftp_fget($conn_id, $handle, $source_file, FTP_BINARY);
+
+				// check upload status
+				if (!$upload) {
+						//echo "FTP upload has failed!";
+						$this->_ERROR_CODE = 24002;
+					} else {
+						//echo "Uploaded $source_file to $ftp_server as $destination_file";
+						$this->_ERROR_CODE = 0;
+					}
+			} else {
+				//echo "couldn't get the size";
+				$this->_ERROR_CODE = 24005;
+			}
+			// close the FTP stream
+			ftp_close($conn_id);
+		}
+
+		if(file_exists($filepath)===true)
+		{
+			$filesize=filesize($filepath);
+			$handle = fopen($filepath, "r");
+			$filecontent = fread($handle, $filesize?$filesize:1000000);
+
+			$filecontent = base64_encode($filecontent);
+			$this->items[0] = new SOAP_Value(
+							'items',
+							'{urn:'. $class_name .'}'.$function_name.'Struct',
+							array(
+								'FileContent'  => $filecontent)
+							);
+			fclose($handle);
+		}else
+		{
+			// Chua co log file
+			$this->_ERROR_CODE = 24004;
+
+		}
+		return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+	}
+
+  function GetVSDFeeResult()
+  {
+    $class_name = $this->class_name;
+    $function_name = 'GetVSDFeeResult';
+    $struct = '{urn:'. $this->class_name .'}'. $function_name . 'Struct';
+
+    if ( authenUser(func_get_args(), $this, $function_name) > 0 )
+      return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+
+    $date_array = getdate();
+    $csv_dir = $this->path.'vcb_kq/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $csv_dir = $csv_dir.'logs/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $csv_dir = $csv_dir.$date_array['year'].'/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $csv_dir = $csv_dir.$date_array['mon'].'/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $filename = 'eps'.date('Ymd').'_buy_log.vcbit';
+    $filepath = $csv_dir.$filename;
+
+    $vsdlogfile = 'vsdrefno_' . date('Ymd') . '.txt';
+    $vsdlogfile = sprintf('%s%s%s/%s/%s',$this->path,'vcb_kq/',$date_array['year'],$date_array['mon'],$vsdlogfile);
+
+    if(is_file($vsdlogfile)){
+      if(!is_file($filepath)){
+        $conn_id = ftp_connect($this->ftp_server);
+        // login with username and password
+        $login_result = ftp_login($conn_id, $this->ftp_user_name, $this->ftp_user_pass);
+
+        // check connection
+        if ((!$conn_id) || (!$login_result)) {
+          $this->_ERROR_CODE = 24001;
+        } else {
+          $destination_file = $filepath;
+            // open some file to write to
+          $handle = fopen($destination_file, 'w');
+          $source_file = 'OUT/'.$filename;
+          // get the size of $file
+          $res = ftp_size($conn_id, $source_file);
+
+          if ($res != -1) {
+            $upload = ftp_fget($conn_id, $handle, $source_file, FTP_BINARY);
+
+            // check upload status
+            if (!$upload) {
+                $this->_ERROR_CODE = 24002;
+              } else {
+                $this->_ERROR_CODE = 0;
+              }
+          } else {
+            //echo "couldn't get the size";
+            $this->_ERROR_CODE = 24005;
+          }
+          // close the FTP stream
+          ftp_close($conn_id);
+          fclose($handle);
+        }
+      }
+
+      if(file_exists($filepath)===true)
+      {
+        $handle = fopen($vsdlogfile, "r");
+        $vsdlogcontent = fgets($handle);
+        fclose($handle);
+        $vsdrefarray = explode('_', $vsdlogcontent);
+
+        $handle = fopen($filepath, "r");
+        while(!feof($handle)){
+          $line = fgets($handle);
+          $splited = explode(';', $line);
+
+          if(in_array($splited[1], $vsdrefarray)){
+            // $filecontent .= $line;
+            $this->items[] = new SOAP_Value(
+                'item',
+                $struct,
+                array(
+                  'Refno'      => new SOAP_Value("Refno", "string", $splited[1]),
+                  'OrderID'    => new SOAP_Value("OrderID", "string", substr($splited[1],0,6)),
+                  'UnitCode'   => new SOAP_Value("UnitCode", "string", substr($splited[1],-6)),
+                  'AccountNo'  => new SOAP_Value("AccountNo", "string", $splited[4]),
+                  'Amount'     => new SOAP_Value("Amount", "string", $splited[12]),
+                  'ErrorCode'  => new SOAP_Value("ErrorCode", "string", $splited[15]),
+                  'Note'       => new SOAP_Value("Note", "string", substr($splited[16],0,strlen($splited[16])-1)),
+                )
+            );
+          }
+        }
+
+        fclose($handle);
+      } else {
+        // Chua co log file
+        $this->_ERROR_CODE = 24004;
+      }
+    } else {
+      // Khong tim thay file vsdfee refno log
+      $this->_ERROR_CODE = 43007;
+    }
+
+    return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+  }
+
+  function UpdateIsCollectedVSDFee()
+  {
+    $class_name = $this->class_name;
+    $function_name = 'UpdateIsCollectedVSDFee';
+    $struct = '{urn:'. $this->class_name .'}'. $function_name . 'Struct';
+
+    if ( authenUser(func_get_args(), $this, $function_name) > 0 )
+      return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+
+    $date_array = getdate();
+    $csv_dir = $this->path.'vcb_kq/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $csv_dir = $csv_dir.'logs/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $csv_dir = $csv_dir.$date_array['year'].'/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $csv_dir = $csv_dir.$date_array['mon'].'/';
+    if (!is_dir($csv_dir)){
+      mkdir( $csv_dir, 0755 );
+    }
+    $filename = 'eps'.date('Ymd').'_buy_log.vcbit';
+    $filepath = $csv_dir.$filename;
+
+    $vsdlogfile = 'vsdrefno_' . date('Ymd') . '.txt';
+    $vsdlogfile = sprintf('%s%s%s/%s/%s',$this->path,'vcb_kq/',$date_array['year'],$date_array['mon'],$vsdlogfile);
+
+    if(is_file($vsdlogfile)){
+      if(!is_file($filepath)){
+        $conn_id = ftp_connect($this->ftp_server);
+        // login with username and password
+        $login_result = ftp_login($conn_id, $this->ftp_user_name, $this->ftp_user_pass);
+
+        // check connection
+        if ((!$conn_id) || (!$login_result)) {
+          $this->_ERROR_CODE = 24001;
+        } else {
+          $destination_file = $filepath;
+            // open some file to write to
+          $handle = fopen($destination_file, 'w');
+          $source_file = 'OUT/'.$filename;
+          // get the size of $file
+          $res = ftp_size($conn_id, $source_file);
+
+          if ($res != -1) {
+            $upload = ftp_fget($conn_id, $handle, $source_file, FTP_BINARY);
+
+            // check upload status
+            if (!$upload) {
+                $this->_ERROR_CODE = 24002;
+              } else {
+                $this->_ERROR_CODE = 0;
+              }
+          } else {
+            //echo "couldn't get the size";
+            $this->_ERROR_CODE = 24005;
+          }
+          // close the FTP stream
+          ftp_close($conn_id);
+          fclose($handle);
+        }
+      }
+
+      if(file_exists($filepath)===true)
+      {
+        $handle = fopen($vsdlogfile, "r");
+        $vsdlogcontent = fgets($handle);
+        fclose($handle);
+        $vsdrefarray = explode('_', $vsdlogcontent);
+
+        $handle = fopen($filepath, "r");
+        while(!feof($handle)){
+          $line = fgets($handle);
+          $splited = explode(';', $line);
+
+          if(in_array($splited[1], $vsdrefarray)){
+            if($splited[15] == '000'){
+              $query = sprintf("CALL sp_FeeForVSD_updateIsCollectedForVCB('%s')", substr($splited[1],0,6));
+              $result = $this->_MDB2->extended->getAll($query);
+            }
+            $this->items[] = new SOAP_Value(
+                'item',
+                $struct,
+                array(
+                  'Refno'      => new SOAP_Value("Refno", "string", $splited[1]),
+                  'OrderID'    => new SOAP_Value("OrderID", "string", substr($splited[1],0,6)),
+                  'UnitCode'   => new SOAP_Value("UnitCode", "string", substr($splited[1],-6)),
+                  'AccountNo'  => new SOAP_Value("AccountNo", "string", $splited[4]),
+                  'Amount'     => new SOAP_Value("Amount", "string", $splited[12]),
+                  'VCBResult'  => new SOAP_Value("VCBResult", "string", $splited[15]),
+                  'Note'       => new SOAP_Value("Note", "string", substr($splited[16],0,strlen($splited[16])-1)),
+                  'UpdateIsCollectedResult' => new SOAP_Value("UpdateIsCollectedResult", "string", $result[0]['varerror']),
+                )
+            );
+          }
+        }
+
+        fclose($handle);
+      } else {
+        // Chua co log file
+        $this->_ERROR_CODE = 24004;
+      }
+    } else {
+      // Khong tim thay file vsdfee refno log
+      $this->_ERROR_CODE = 43007;
+    }
+
+    return returnXML(func_get_args(), $this->class_name, $function_name, $this->_ERROR_CODE, $this->items, $this );
+  }
+}
+?>

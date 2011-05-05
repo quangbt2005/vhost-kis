@@ -1,0 +1,65 @@
+	<div id="header">
+		<h1 style="width: 513px"><a href="index.php"><img src="images/new_eot_logo.gif" border="0"></a></h1>
+		<div style="width: 484px">
+			<p>
+				{if $smarty.session.account_no != NULL && $smarty.session.account_id != NULL && $smarty.session.login_time != NULL}
+				{$login_string} <span class="focus">{$account_string}</span>
+					[ <a href="logout.php">{$pageinfo.CAPTIONS.LOGOUT}</a> ]
+				{else}
+					&nbsp;
+				{/if}
+			</p>
+			<p>
+				{if $smarty.session.account_no != NULL && $smarty.session.account_id != NULL && $smarty.session.login_time != NULL}
+					<a href="edit_information.php" class="link2">{$pageinfo.CAPTIONS.EDIT_PROFILE}</a>
+				{else}
+					&nbsp;
+				{/if}
+			</p>
+			<ul>
+				<li><a href="{$CurrentURL}language=vie">Tiếng Việt</a></li>
+				<li> | <a href="{$CurrentURL}language=eng">English</a></li>
+				<li> | <a href="{$CurrentURL}language=jpn">日本語</a></li>
+			</ul>
+		</div>
+		<br class="clear" />
+	</div>
+	<div id="highlight">
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="776" height="130">
+  <param name="movie" value="images/banner.swf" />
+  <param name="quality" value="high" />
+  <embed src="images/banner.swf" quality="high" pluginspage="https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="776" height="130"></embed>
+</object>
+		<div>
+			<a href="http://priceonline.eps.com.vn/vn/priceboard/hose/index.html" target="_blank">
+				<img src="images/{$smarty.session.language}_img_price_01_n.gif" title="{$pageinfo.CAPTIONS.MENU_09}" />
+			</a>
+			<a href="http://priceonline.eps.com.vn/vn/priceboard/hase/index.html" target="_blank">
+      	<img src="images/{$smarty.session.language}_img_price_02_n.gif" title="{$pageinfo.CAPTIONS.MENU_10}" />
+      </a>
+    </div>
+		<br class="clear" />
+	</div>
+<!--	 <ul id="nav"><p align="center"><blink><font color='red'><b>EPS sẽ tiến hành bảo trì hệ thống từ 16 giờ ngày 12/06/2009. Thời gian dự tính là 3 tiếng.</b></font></blink></p></ul>-->
+  <ul class="sf-menu" style="margin-bottom: 0px;">
+			<li><a href="summary.php" style="border-left: 0px;">{$pageinfo.CAPTIONS.MENU_01}</a></li>
+			<li><a href="trading_online.php">{$pageinfo.CAPTIONS.MENU_02}</a></li>
+			<li>
+				<a href="#">{$pageinfo.CAPTIONS.MENU_04}</a>
+				<ul>
+					<li><a href="history_trading.php">{$pageinfo.CAPTIONS.MENU_12}</a></li>
+					<li><a href="transaction_report.php">{$pageinfo.CAPTIONS.MENU_13}</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">{$pageinfo.CAPTIONS.MENU_14}</a>
+				<ul>
+					<li><a href="edit_information.php">{$pageinfo.CAPTIONS.MENU_05}</a></li>
+					<li><a href="advance_paper.php">{$pageinfo.CAPTIONS.MENU_08}</a></li>
+					<li><a href="addvalue.php">{$pageinfo.CAPTIONS.MENU_11}</a></li>
+				</ul>
+			</li>
+			<li><a href="open_account_qd.php" style="background: url('images/user-group_18x18.png') no-repeat 5px center;padding-left: 28px;">{$pageinfo.CAPTIONS.MENU_06}</a></li>
+			<li><a href="downloads/EPS_Trading_Online_Kit.exe" style="background: url('images/Icon-Disk01-Red_18x18.png') no-repeat 5px center;padding-left: 28px;">{$pageinfo.CAPTIONS.MENU_15}</a></li>
+		</ul><div class="clear"></div>

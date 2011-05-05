@@ -1,0 +1,6 @@
+<!-- Log file 6-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022543533 Name Châu Hùynh Minh Address  BankAccountNo 0071004465478 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 19950617 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C009550 State A CALL SP_OpenPrivateAccount_VCB
+('HUYNH ','MINH CHAU','C','3 BAU BANG P13 QTB','3 BAU BANG P13 QTB','','','','','022543533','19950617','','F','0071004465478','','VietComBank') ErrorCode 0000 2008-06-04 02:12:21
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023261365 Name Hạnh Trần Thị Mỹ Address  BankAccountNo 0071004465504 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20050303 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 8451088 MailingAddress  MailingPhone  Output Account057C002770 State A CALL SP_OpenPrivateAccount_VCB
+('TRAN ','THI MY HANH','C','551/122/6 LE QUANG DINH P1 QGV HCM','551/122/6 LE QUANG DINH P1 QGV HCM','','','','','023261365','20050303','','F','0071004465504','','VietComBank') ErrorCode 0000 2008-06-04 02:16:25
