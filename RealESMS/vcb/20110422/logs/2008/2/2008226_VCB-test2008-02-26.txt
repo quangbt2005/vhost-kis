@@ -1,0 +1,3 @@
+<!-- Log file 2-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022150851 Name HA  THI TU ANH Address  BankAccountNo 00071004309196 PartnerType C dtBirthDay 19681014 PlaceOfBirth  dtDateIssue 20060207 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C005862 State A ErrorCode0000 2008-02-26 11:14:25

@@ -1,0 +1,3 @@
+<!-- Log file 1-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 370558072 Name PHAN  HUYNH YEN Address  BankAccountNo 00071004255496 PartnerType 2 dtBirthDay 19790606 PlaceOfBirth  dtDateIssue 19941018 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C001905 State A ErrorCode0000 2008-01-03 10:59:02

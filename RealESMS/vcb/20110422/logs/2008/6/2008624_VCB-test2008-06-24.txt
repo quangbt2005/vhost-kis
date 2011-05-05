@@ -1,0 +1,4 @@
+<!-- Log file 6-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 340892950 Name Khoa Phạm Văn Address  BankAccountNo 0071004489054 PartnerType C dtBirthDay 19780627 PlaceOfBirth  dtDateIssue 20041005 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C008422 State A CALL SP_OpenPrivateAccount_VCB
+('PHAM ','VAN KHOA','C','HOA THANH LAI VU DONG THAP','HOA THANH LAI VU DONG THAP','','','','19780627','340892950','20041005','','F','0071004489054','','VietComBank') ErrorCode 0000 2008-06-24 03:41:57

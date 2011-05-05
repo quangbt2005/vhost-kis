@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.:: Welcome to Easy Online Trader ::.</title>
+<link href="css/superfish.css" rel="stylesheet" media="all" type="text/css">
+<script language="javascript" src="javascripts/jquery/jquery-1.2.6.min.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/hoverIntent.js" type="text/javascript"></script>
+<script language="javascript" src="javascripts/jquery/superfish-1.4.8/superfish.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+	{literal}
+	var $j = jQuery.noConflict();
+	$j(document).ready(function(){
+        $j("ul.sf-menu").superfish({speed:       'fast'});
+  });
+	{/literal}
+</script>
+<script src="javascripts/hover.js" type="text/javascript"></script>
+<script>
+{literal}
+function m_dosh(modname) {
+        var button_obj = document.getElementById(modname + '_b');
+        var content_obj = document.getElementById(modname + '_c');
+
+        if (content_obj.style.display == 'none') {
+                content_obj.style.display = 'block';
+                //button_obj.className = 'clsButton clsTru';
+        } else {
+                content_obj.style.display = 'none';
+                //button_obj.className = 'clsButton clsCong';
+        }
+}
+function regist_confirm()
+{
+	var drpService = document.getElementById("addvalue_type");
+	if(drpService)
+	{
+		var index = drpService.selectedIndex;
+		var serviceText = drpService.options[index].text;
+
+		return confirm('Bạn có chắc chắn muốn đăng ký dịch vụ "' + serviceText + '" ?');
+	}
+	return true;
+}
+{/literal}
+
+</script>
+<link href="css/standard.css" rel="stylesheet" media="all" type="text/css">
+</head>
+<body>
+<div id="pagewrap">
+	{php}include("header.php"){/php}
+	<div id="main">
+		<div id="content">
+			<h2>Đăng kí dịch vụ</h2>
+			<div id="formEdit">
+				<form name="register_addvalue" id="form2" method="post">
+        <div class="error-msm1">{$error_msg}</div>
+					<div id="service_01">
+						<p>
+							<b>1. Cảnh báo và đặt lệnh tự động là gì?</b><br />
+								 <span style="margin-left: 15px;"><b><i>Cảnh báo chứng khoán:</i></b></span>
+						</p>
+						<p>
+						 <span style="margin-left: 30px;"><b>Định nghĩa:<br /></b></span>
+						 <span style="margin-left: 45px;">
+							<ul style="list-style:none; padding: 0 10px 15px 10px; margin-left: 40px;">
+								<li>- Là dịch vụ mà Công ty CP Chứng khoán KIS Việt Nam (KIS) cung cấp thông tin cho nhà đầu tư thông qua hình thức nhắn tin SMS, email, window pop-up hoặc các hình thức tương tự.</li>
+								<li>- Nhà đầu tư có thể xác lập cho mình một mức giá bao gồm mức lãi kỳ vọng hoặc mức lỗ dự kiến của một cổ phiếu đã mua, và/hoặc nhà đầu tư có thể xác lập giá mong đợi của một cổ phiếu nào đó mong muốn để mua vào với giá bằng giá đã xác lập hoặc thấp hơn.</li>
+								<li>- Sau khi nhà đầu tư đã xác lập những giá trị đã nêu trên, KIS sẽ gửi nội dung cảnh báo theo các hạng mức mà khách hàng đăng ký như nội dung bên dưới bao gồm:<br /></li>
+									<ul style="list-style:inside; padding: 0 5px 0 5px; margin-left: 20px;">
+										<li>Thông báo giá đang khớp hiện tại vượt ngưỡng lợi nhuận kỳ vọng hoặc lỗ dự kiến</li>
+										<li>Thông tin về VN Index ngay tại thời điểm đó</li>
+										<li>Thông tin về giá mua, giá bán tốt nhất</li>
+										<!--<li>Thông tin về dư mua, dư bán của thị trường</li>
+										<li>Thông tin về giao dịch của nhà đầu tư nước ngoài.</li>-->
+									</ul>
+							</ul>
+						 </span>
+
+						<!--<p>
+						 <span style="margin-left: 30px;"><b>Các hạng mức lựa chọn<br /></b></span>
+						 <ul style="list-style:inside; padding: 0 10px 15px 10px; margin-left: 40px;">
+							 	<li><u>Hạng mức 1</u>: mức phí KIS thu của khách hàng là 10.000 đồng/tháng</li>
+								 <ul style="list-style:circle; padding: 0 10px 15px 10px; margin-left: 20px;">
+								 	<li>Nhận tối đa 20 tin nhắn mỗi tháng</li>
+									<li>Thông báo khi giá khớp hiện tại vượt ngưỡng lợi nhuận kỳ vọng hoặc lỗ dự kiến.</li>
+									<li>Thông tin về VNIndex</li>
+									<li>Thông tin về giá/mua bán tốt nhất</li>
+									<li>Thông tin về dư mua, dư bán của thị trường</li>
+								 </ul>
+								<li><u>Hạng mức 2</u>: mức phí KIS thu của khách hàng là 20.000 đồng/tháng</li>
+								 <ul style="list-style:circle; padding: 0 10px 15px 10px; margin-left: 20px;">
+									<li>Giống hạng mức 1</li>
+									<li>Nhận thêm tối đa 25 tin nhắn mỗi tháng (tổng cộng 45 tin nhắn)</li>
+									<li>Thông tin về giao dịch của nhà đầu tư nước ngoài</li>
+								 </ul>
+								<li><u>Hạng mức 3</u>: mức phí là 9.000 đồng</li>
+									<span style="margin-left: 10px;">Mua tin nhắn thêm: Bạn nhận được thêm 10 tin nhắn trong tài khoản của bạn.</span>
+						 </ul>
+						</p>-->
+</p>
+						 <span style="margin-left: 30px; margin-bottom:0px; padding: 0 0px 0px 0px;"><a href="javascript:;" onclick="m_dosh('exam1')"><b>Ví dụ:</b></a><br /></span>
+                        <div  id="exam1_b"  style="display:none"></div>
+						<div style="display:none" id="exam1_c">
+						 <span style="margin-left: 30px;">Hiện tại giá Cổ phiếu ACB là 100.000.<br /></span>
+						 <span style="margin-left: 30px;"><b>Trường hợp 1: dự định bán<br /></b></span>
+						 <span style="margin-left: 30px;">Nhà đầu tư đã đặt lệnh mua CP ACB và khớp giá là 100.000, nhà đầu tư có thể đăng ký dịch vụ cảnh báo chứng khoán của KIS với điều kiện là khi giá ACB đạt được lợi nhuận kỳ vọng là 20% hoặc lỗ dự kiến là 10% thì KIS sẽ thông báo qua dịch vụ EOT Alert & Order mà nhà đầu tư đã đăng ký.<br /></span>
+						 <span style="margin-left: 30px;"><b>Trường hợp 2 dự định mua<br /></b></span>
+						 <span style="margin-left: 30px;">Nếu nhà đầu tư muốn mua CP ACB với điều kiện giá là dưới 70.000, nhà đầu tư có thể sử dụng dịch vụ cảnh báo chứng khoán của KIS. Khi giá CP ACB khớp lệnh trên thị trường đạt mức giá mua kỳ vọng là 70.000 thì hệ thống dịch vụ EOT – Alert & Order sẽ thông báo cho nhà đầu tư.<br /></span>
+						</div>
+					</p>
+
+<br/>
+						<p>
+						 <b>2. Đặt lệnh tự động:</b>
+						</p>
+						<p>
+						 <span style="margin-left: 30px;"><b>a.	Định nghĩa:<br /></b></span>
+						 <span style="margin-left: 45px;">Là dịch vụ được Công ty CP chứng khoán KIS Việt Nam (KIS) cung cấp, nhà đầu tư có thể xác lập mức giá xác định và yêu cầu hệ thống Cảnh báo và Đặt lệnh tự động đặt lệnh mua/bán chứng khoán ngay lập tức theo những số lượng, điều kiện giá mà nhà đầu tư đã xác lập khi giá thị trường đã khớp mức đăng ký.<br />
+						 </span>
+						 <span style="margin-left: 30px; margin-bottom:0px; padding: 0 0px 0px 0px;"><a href="javascript:;" onclick="m_dosh('exam2')"><b>Ví dụ:</b></a><br /></span>
+                        <div  id="exam2_b"  style="display:none"></div>
+
+						<div style="display:none" id="exam2_c">
+						 <span style="margin-left: 30px;">Hiện tại giá Cổ phiếu ACB là 100.000.<br /></span>
+						 <span style="margin-left: 30px;"><b>Trường hợp 1: dự định bán<br /></b></span>
+						 <span style="margin-left: 30px;">Nhà đầu tư đặt bán CP ACB với giá xác định là 110.000 đ. Nhà đầu tư có thể đăng ký dịch vụ đặt lệnh tự động của KIS với điều kiện là khi giá ACB trên thị trường đạt đến mức giá khớp lệnh là 110.000 đ, thì hệ thống Cảnh báo và Đặt lệnh tự động sẽ tự động đặt lệnh bán chứng khoán này đúng với mức giá mà nhà đầu tư đã xác lập.<br /></span>
+						 <span style="margin-left: 30px;"><b>Trường hợp 2 dự định mua<br /></b></span>
+						 <span style="margin-left: 30px;">Nếu nhà đầu tư muốn mua CP ACB với điều kiện giá bằng 70.000đ, nhà đầu tư có thể sử dụng dịch vụ đặt lệnh tự động của KIS. Khi giá CP ACB khớp lệnh trên thị trường đạt mức giá mua kỳ vọng là 70.000đ thì hệ thống Cảnh báo và Đặt lệnh tự động sẽ tự động đặt lệnh mua ACB cho nhà đầu tư đúng với mức giá mà nhà đầu tư đã xác lập.<br /></span>
+						</div>
+						</p>
+                        <p></p>
+						<p>
+							<span style="margin-left: 30px;"><b>b. Lợi ích:</b></span><br />
+							<span style="margin-left: 30px;">Đây là dịch vụ gia tăng trên nền tảng giao dịch trực tuyến Easy Online Trader (EOT) của Công ty CP Chứng khoán KIS Việt Nam (KIS) cung cấp nhằm mang lại tiện ích cho nhà đầu tư trong giao dịch chứng khoán.</span><br />
+							<ul style="list-style:none; padding: 0 10px 15px 10px; margin-left: 20px; text-align:justify; line-height: 20px;">
+								<li>- <b>Tiện lợi:</b> Nhà đầu tư có thể tự xác lập cho mình những giá trị lợi nhuận kỳ vọng hoặc lỗ dự kiến cho cổ phiếu mà mình nắm giữ và/hoặc những cổ phiếu muốn mua. Nhà đầu tư không cần tốn thời gian theo dõi cũng như lên sàn để đặt lệnh, tất cả đều do hệ thống tự động thực hiện theo yêu cầu. Dịch vụ Cảnh báo và Đặt lệnh tự động rất thích hợp với những nhà đầu tư luôn bận rộn với công việc hàng ngày vào giờ thị trường giao dịch.</li>
+								<li>- <b>Nhanh chóng:</b> Với hệ thống tự động thực hiện việc cảnh báo & tự động đặt lệnh, việc tiết kiệm được thời gian, đặt lệnh nhanh chóng là rất rõ ràng.</li>
+								<li>- <b>Hiệu quả:</b> Việc cảnh báo cho nhà đẩu tư biết giá chứng khoán hiện đã vượt ngưỡng điều kiện là cơ sở để nhà đẩu tư có thể ra quyết định kịp thời. Nếu nhà đầu tư đăng ký dịch vụ đặt lệnh tự động việc hệ thống Cảnh báo và Đặt lệnh tự động đặt lệnh mua/bán tức thì sẽ mang lại xác suất khớp lệnh và hiệu quả cao.</li>
+								<li>- <b>Bảo mật:</b> Tất cả các thông tin của nhà đầu tư được bảo mật qua hệ thống giao dịch trực tuyến của KIS – Easy Online Trader, chỉ có cá nhân nhà đầu tư và/hoặc người uỷ quyền hợp pháp mới thực hiện được việc đăng ký dịch vụ trên.</li>
+							</ul>
+						</p>
+						<p></p>
+
+						<p>
+						 <b>3. Các hạng mức lựa chọn:</b>
+						</p>
+						<p>
+							<span style="margin-left: 30px;"><b>Hạn mức 1: mức phí KIS thu của khách hàng là 19.900 đồng/tháng:</b></span><br />
+							<ul style="list-style:none; padding: 0 10px 15px 10px; margin-left: 20px; text-align:justify; line-height: 20px;">
+								<li>- Nhận tối đa 30 tin nhắn mỗi tháng.</li>
+								<li>- Thông báo khi giá khớp hiện tại vượt ngưỡng lợi nhuận kỳ vọng hoặc lỗ dự kiến.</li>
+								<li>- Thông tin về VNIndex.</li>
+								<li>- Thông tin về giá/mua bán tốt nhất.</li>
+                                <li>- Thông tin về dư mua, dư bán của thị trường.</li>
+							</ul>
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;"><b>Hạn mức 2: mức phí KIS thu của khách hàng là 39.900 đồng/tháng:</b></span><br />
+							<ul style="list-style:none; padding: 0 10px 15px 10px; margin-left: 20px; text-align:justify; line-height: 20px;">
+								<li>- Giống hạng mức 1.</li>
+								<li>- Nhận thêm tối đa 20 tin nhắn mỗi tháng (tổng cộng 50 tin nhắn).</li>
+								<li>- Thông tin về giao dịch của nhà đầu tư nước ngoài.</li>
+							</ul>
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;"><b>Hạn mức 3: mức phí KIS thu của khách hàng là 9.900 đồng/gói tin nhắn:</b></span><br />
+							<ul style="list-style:none; padding: 0 10px 15px 10px; margin-left: 20px; text-align:justify; line-height: 20px;">
+								<li>- Mua tin nhắn thêm: Bạn nhận được thêm 10 tin nhắn/tháng trong tài khoản của bạn. Mỗi gói mua thêm tối thiểu là 10 tin nhắn.</li>
+							</ul>
+						</p>
+
+					</div>
+					<p>
+						<label>Loại dịch vụ</label>
+						<select name="addvalue_type" tabindex="2" id="addvalue_type">
+							{section name=row loop=$addvalue_types}
+                            	{if $addvalue_types[row].SMSServiceID <> 2}
+								<option value="{$addvalue_types[row].SMSServiceID}">{$addvalue_types[row].Note} ({$addvalue_types[row].ServiceName})</option>
+                                {/if}
+							{/section}
+						</select>
+					</p>
+					<p><label>&nbsp;</label>
+						<input type="submit" name="Submit" value="Đăng kí" class="btnInput1" onclick="return regist_confirm();">
+						<input type="reset" name="Reset" value="Xóa trắng"  class="btnInput1">
+					</p>
+<p></p>
+						<p>
+						 <b><a href="javascript:;" onclick="m_dosh('go_assigner')">4. Các lưu ý chung khi sử dụng dịch vụ:</a></b>
+						</p>
+                        <div  id="go_assigner_b"  style="display:none"></div>
+
+						<div style="display:none" id="go_assigner_c">
+                        <p><span style="margin-left: 30px;">Ngoài những nội dung đã được qui định tại trang chủ, phần “Qui định sử dụng”, khách hàng đăng ký sử dụng dịch vụ EOT – Alert & Order cần đọc rõ và đồng ý với những vấn đề được liệt kê dưới đây trước khi đăng ký sử dụng dịch vụ:</span><br /></p>
+
+						<p>
+							<span style="margin-left: 30px;">a.	Dịch vụ EOT Alert & Order là một trong những dịch vụ cộng thêm trên hệ thống giao dịch trực tuyến Easy Online Trader (EOT) của Công ty CP chứng khoán KIS Việt Nam (KIS) nhằm cung cấp cho khách hàng những tiện ích khi giao dịch chứng khoán. Dịch vụ này được cung cấp cho khách hàng dựa trên tinh thần tự nguyện lựa chọn của khách hàng, Công ty CP Chứng khoán KIS Việt Nam (KIS) không áp dụng một hình thức bắt buộc hay ép buộc khách hàng sử dụng dịch vụ này.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">b.	Khi đã đăng ký sử dụng dịch vụ này, khách hàng đương nhiên hiểu và đồng ý với những rủi ro có thể xảy ra cho dịch vụ này như sau:</span><br />
+							<ul style="list-style:none; padding: 0 10px 15px 10px; margin-left: 20px; text-align:justify; line-height: 20px;">
+								<li>- Dịch vụ cảnh báo: hình thức cảnh báo sẽ được chuyển cho khách hàng qua các hình thức như tin nhắn SMS, email hay window pop-up hay những hình thức tương tự. Khách hàng đồng ý rằng những hình thức này sẽ có những rủi ro có thể phát sinh về mặt hệ thống của chính KIS hay của những nhà cung cấp dịch vụ phân mềm hay cung cấp dịch vụ tin nhắn SMS, truyền thông …mà KIS có hoặc không có liên kết. Từ những rủi ro có thể phát sinh này, lợi ích của khách hàng sẽ bị ảnh hưởng.</li>
+								<li>- Dịch vụ đặt lệnh tự động: lệnh tự động sẽ được đặt vào hệ thống căn cứ vào các điều kiện mà khách hàng đặt ra ngay từ khi đăng ký. Lệnh tự động một khi đã vào hệ thống thì sẽ giống như một lệnh đặt thông thường qua các kênh khác. Lệnh tự động không được hiểu là xác suất khớp lệnh sẽ là 100%.</li>
+							</ul>
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">c.	Lệnh tự động được đưa vào hệ thống KIS khi giá khớp hiện tại trên thị trường đúng bằng với mức giá nhà đầu tư xác lập khi đăng ký. Tuy nhiên Lệnh sẽ có một độ trễ nhất định trong quá trình chuyển lệnh qua Sàn. Chúng tôi sẽ cố gắng thực hiện đặt lệnh tự động cho khách hàng theo giá tạm khớp trong thời gian nhanh nhất có thể.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">d.	Khi một lệnh tự động được đưa vào hệ thống và Sàn giao dịch mà không khớp do bất kỳ lý do gì thì lệnh đó sẽ không còn giá trị nữa, khách hàng muốn đặt lệnh tự động tiếp thì được yêu cầu vào hệ thống đặt lại.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">e.	Khi lệnh được đưa vào hệ thống KIS, nếu lệnh không hợp lệ về Chứng khoán và Tiền thì lệnh đó sẽ không còn giá trị nữa, khách hàng muốn đặt lệnh tự động tiếp thì được yêu cầu vào hệ thống đặt lại.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">f.	Lệnh tự động ưu tiên về thời gian: Lệnh được đặt trước thì được ưu tiên được thực hiện trước.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">g.	Lệnh tự động chỉ có giá trị cho lệnh Limit Order, không áp dụng cho ATO, ATC.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">h.	Nhà đầu tư khi đặt lệnh tự động và đặt lênh qua các kênh khác nên chú ý tránh việc Mua bán cùng một loại Chứng khoán trong cùng phiên giao dịch.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">i.	Đối với Dịch vụ Cảnh báo chứng khoán và Đặt lệnh tự động: Tin nhắn SMS được gửi đến nhà đầu tư khi: Lệnh không hợp lệ, Lệnh đã được đặt, Lệnh đã khớp, Lệnh không khớp.</span><br />
+						</p>
+
+						<p>
+							<span style="margin-left: 30px;">j.	Gói Tin nhắn theo từng hạng mức chỉ có giá trị sử dụng trong tháng đăng ký, không có giá trị tích lũy cho tháng sau ngoại trừ gói tin nhắn đăng ký mua thêm.</span><br />
+						</p>
+						</div>
+				</form>
+			</div>
+    </div>
+		<br class="clear">
+	</div>
+	{php}include("footer.php"){/php}
+</div>
+</body>
+</html>

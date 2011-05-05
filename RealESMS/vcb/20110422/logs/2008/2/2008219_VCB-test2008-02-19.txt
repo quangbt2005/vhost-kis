@@ -1,0 +1,3 @@
+<!-- Log file 2-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022320303 Name Khải Hoàng Trọng Address  BankAccountNo 00071004329356 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20030528 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C007890 State A ErrorCode0000 2008-02-19 04:35:33

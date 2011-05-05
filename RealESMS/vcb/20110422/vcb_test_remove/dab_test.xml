@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+<RECORD>
+      <ID>1</ID>
+      <ErrorCode>15871</ErrorCode>
+      <Description_vn>Thành công</Description_vn>
+      <Description_en>successful</Description_en>
+</RECORD>
+<RECORD>
+      <ID>2</ID>
+      <ErrorCode>123654</ErrorCode>
+      <Description_vn>Không thể truy cập cơ sở dữ liệu</Description_vn>
+      <Description_en>can not access to DB</Description_en>
+</RECORD>
+</RECORDS>

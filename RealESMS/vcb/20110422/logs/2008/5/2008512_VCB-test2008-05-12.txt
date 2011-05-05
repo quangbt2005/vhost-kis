@@ -1,0 +1,6 @@
+<!-- Log file 5-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 301148270 Name TRUONG  NHAT VAN HANG Address  BankAccountNo 0071004435362 PartnerType C dtBirthDay 19850721 PlaceOfBirth  dtDateIssue 20000726 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C003464 State A CALL SP_OpenPrivateAccount_VCB
+('TRUONG ','NHAT VAN HANG','C','99 HUYNH VIET THANH P.2 TAN AN LONG AN','99 HUYNH VIET THANH P.2 TAN AN LONG AN','','','','19850721','301148270','20000726','','F','0071004435362','','VietComBank') ErrorCode 0000 2008-05-12 09:26:11
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023280480 Name Nhung Trương Bạch Address  BankAccountNo 0071004239092 PartnerType C dtBirthDay 19720313 PlaceOfBirth  dtDateIssue 20050803 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 8535031 MailingAddress  MailingPhone  Output Account057C009162 State A CALL SP_OpenPrivateAccount_VCB
+('TRUONG ','BACH NHUNG','C','13 PHUNG HUNG P.13 Q.5','13 PHUNG HUNG P.13 Q.5','','','','19720313','023280480','20050803','','F','0071004239092','','VietComBank') ErrorCode 0000 2008-05-12 09:44:44

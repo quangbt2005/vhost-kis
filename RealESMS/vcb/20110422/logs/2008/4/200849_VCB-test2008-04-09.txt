@@ -1,0 +1,4 @@
+<!-- Log file 4-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 020610291 Name DINH BA THANH Address 55B NGUYEN VAN THU QUAN 1 TP.HCM BankAccountNo 0071004400209 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20000000 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account State A ErrorCode8020 2008-04-09 03:02:35
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 130874696 Name Ta Lee Chien Address  BankAccountNo 0071004400760 PartnerType C dtBirthDay 19710630 PlaceOfBirth  dtDateIssue 20001030 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 0613993888 MailingAddress  MailingPhone  Output Account057FIA0303 State A ErrorCode0000 2008-04-09 04:07:26

@@ -1,0 +1,3 @@
+<!-- Log file 6-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022634977 Name VO VAN TIEN (PHAR) Address XA TRUONG XUAN H.OMON CAN THO BankAccountNo 0071004481823 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20000000 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account State A  ErrorCode 8020 2008-06-19 03:56:28

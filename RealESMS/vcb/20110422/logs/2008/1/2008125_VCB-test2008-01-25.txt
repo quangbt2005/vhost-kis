@@ -1,0 +1,4 @@
+<!-- Log file 1-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 461033000152 Name CT  CP MIRAE Address  BankAccountNo 00071004302404 PartnerType 2 dtBirthDay 20070706 PlaceOfBirth  dtDateIssue 20070706 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C003275 State A ErrorCode0000 2008-01-25 09:24:41
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023463690 Name NGUYEN  SON HAI Address  BankAccountNo 00071004303617 PartnerType 2 dtBirthDay  PlaceOfBirth  dtDateIssue 19970709 PlaceIssue  ZipCode  Country  Email hai256@gmail.com Phone  Fax  CompanyAddress  CompanyPhone 9104833 MailingAddress  MailingPhone  Output Account057C005439 State A ErrorCode0000 2008-01-25 01:49:43

@@ -1,0 +1,3 @@
+<!-- Log file 2-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 142247962 Name NGUYEN  DINH LINH Address  BankAccountNo 00071004345329 PartnerType C dtBirthDay 19810908 PlaceOfBirth  dtDateIssue 20020821 PlaceIssue  ZipCode  Country  Email nguyendinhlinh@gmail.com Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C006322 State A ErrorCode0000 2008-02-29 08:29:15

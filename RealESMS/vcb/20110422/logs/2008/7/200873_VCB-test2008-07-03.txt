@@ -1,0 +1,4 @@
+<!-- Log file 7-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 311511892 Name TRAN  ANH TUAN Address  BankAccountNo 0071004495731 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 19930616 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C007955 State A CALL SP_OpenPrivateAccount_VCB
+('TRAN ','ANH TUAN','C','HOA PHU HOA TINH CHO GAO TIEN GIANG','HOA PHU HOA TINH CHO GAO TIEN GIANG','','','','','311511892','19930616','','F','0071004495731','','VietComBank') ErrorCode 0000 2008-07-03 09:35:55

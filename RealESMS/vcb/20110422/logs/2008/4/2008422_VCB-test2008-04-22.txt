@@ -1,0 +1,8 @@
+<!-- Log file 4-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022248918 Name  Address  BankAccountNo 0071004415322 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20031009 PlaceIssue  ZipCode  Country  Email thuan25@yahoo.com Phone  Fax  CompanyAddress  CompanyPhone 8408850 MailingAddress  MailingPhone  Output Account State A CALL SP_OpenPrivateAccount_VCB
+('DANG ','DINH THUAN','C','CTCTTC NHNT CN HCM','CTCTTC NHNT CN HCM','','','thuan25@yahoo.com','','022248918','20031009','','F','0071004415322','','VietComBank') ErrorCode 8051 2008-04-22 10:54:54
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023316771 Name  Address  BankAccountNo 0071000789721 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 19960622 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account State A CALL SP_OpenPrivateAccount_VCB
+('TRAN ','THIEN QUOC ANH','C','59/2B PHAM VIET CHANH Q1 HCM','59/2B PHAM VIET CHANH Q1 HCM','','','','','023316771','19960622','','F','0071000789721','','VietComBank') ErrorCode 8051 2008-04-22 01:56:28
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023245579 Name  Address  BankAccountNo 0071000584512 PartnerType C dtBirthDay 19791210 PlaceOfBirth  dtDateIssue 20070103 PlaceIssue  ZipCode  Country  Email pgd09_vcbhcm@yahoo.com Phone 0907738638 Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account State A CALL SP_OpenPrivateAccount_VCB
+('VO ','NGUYEN AN KHANG','C','3/11 CX LU GIA F15 Q11 HCM','3/11 CX LU GIA F15 Q11 HCM','0907738638','','pgd09_vcbhcm@yahoo.com','19791210','023245579','20070103','','F','0071000584512','','VietComBank') ErrorCode 8051 2008-04-22 02:05:06

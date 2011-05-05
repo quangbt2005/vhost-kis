@@ -1,0 +1,3 @@
+<!-- Log file 1-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023323004 Name Trang Nguyễn Hồng Address  BankAccountNo 00071004312499 PartnerType C dtBirthDay 19710203 PlaceOfBirth  dtDateIssue 20070227 PlaceIssue  ZipCode  Country  Email trangdpi@yahoo.com Phone 0908465112 Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C005656 State A ErrorCode0000 2008-01-31 11:38:27

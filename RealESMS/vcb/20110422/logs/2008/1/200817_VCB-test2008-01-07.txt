@@ -1,0 +1,4 @@
+<!-- Log file 1-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 022488629 Name PHAN  THI DIEU TRAN Address  BankAccountNo 00071004258568 PartnerType 2 dtBirthDay 19670515 PlaceOfBirth  dtDateIssue 20041201 PlaceIssue  ZipCode  Country  Email tranphan@yahoo.com Phone 0903822255 Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C001494 State A ErrorCode0000 2008-01-07 09:40:01
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 264220533 Name LE  TON VINH Address  BankAccountNo 00071004259766 PartnerType 2 dtBirthDay 19831018 PlaceOfBirth  dtDateIssue 20010830 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C003870 State A ErrorCode0000 2008-01-07 02:39:03

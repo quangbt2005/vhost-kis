@@ -1,0 +1,4 @@
+<!-- Log file 5-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 250539196 Name NGUYEN  HOANG LONG Address  BankAccountNo 0071004440676 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 19990818 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C007683 State A CALL SP_OpenPrivateAccount_VCB
+('NGUYEN ','HOANG LONG','C','204 MAI ANH DAO P8 DALAT','204 MAI ANH DAO P8 DALAT','','','','','250539196','19990818','','F','0071004440676','','VietComBank') ErrorCode 0000 2008-05-16 08:59:11

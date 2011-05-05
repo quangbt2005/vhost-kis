@@ -1,0 +1,3 @@
+<!-- Log file 1-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023858213 Name NGUYEN  CONG MINH Address  BankAccountNo 00071004279852 PartnerType 2 dtBirthDay 19720602 PlaceOfBirth  dtDateIssue 20001201 PlaceIssue  ZipCode  Country  Email  Phone 0-913609579 Fax  CompanyAddress  CompanyPhone 8-083924 MailingAddress  MailingPhone  Output Account057C002402 State A ErrorCode0000 2008-01-17 10:27:54

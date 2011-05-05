@@ -1,0 +1,4 @@
+<!-- Log file 5-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023280480 Name Nhung Trương Bạch Address  BankAccountNo 0071004239092 PartnerType C dtBirthDay 19720313 PlaceOfBirth  dtDateIssue 20050803 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 8535031 MailingAddress  MailingPhone  Output Account057C009162 State A CALL SP_OpenPrivateAccount_VCB
+('TRUONG ','BACH NHUNG','C','13 PHUNG HUNG P.13 Q.5','13 PHUNG HUNG P.13 Q.5','','','','19720313','023280480','20050803','','F','0071004239092','','VietComBank') ErrorCode 0000 2008-05-09 02:50:31

@@ -1,0 +1,4 @@
+<!-- Log file 6-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 186275976 Name NGUYEN  THI MAI TRANG Address  BankAccountNo 0071004472511 PartnerType C dtBirthDay 19840211 PlaceOfBirth  dtDateIssue 20030405 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 8222675 MailingAddress  MailingPhone  Output Account057C003707 State A CALL SP_OpenPrivateAccount_VCB
+('NGUYEN ','THI MAI TRANG','C','56/38 BINH DUONG 3,AN BINH,DI AN,B DUONG','56/38 BINH DUONG 3,AN BINH,DI AN,B DUONG','','','','19840211','186275976','20030405','','F','0071004472511','','VietComBank') ErrorCode 0000 2008-06-10 03:15:50

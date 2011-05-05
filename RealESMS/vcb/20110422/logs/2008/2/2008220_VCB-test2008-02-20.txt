@@ -1,0 +1,3 @@
+<!-- Log file 2-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 4103002232 Name  Công Ty Cổ Phần Dầu Khí An pha S.G Address  BankAccountNo 00071004329402 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20040402 PlaceIssue  ZipCode  Country  Email anphasg_tx@hcm.fpt.vn Phone  Fax  CompanyAddress  CompanyPhone 8490152 MailingAddress  MailingPhone  Output Account057C003969 State A ErrorCode0000 2008-02-20 07:57:03

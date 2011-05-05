@@ -1,0 +1,4 @@
+<!-- Log file 7-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023599841 Name Đức Lê Minh Address  BankAccountNo 0071004501918 PartnerType C dtBirthDay 19820418 PlaceOfBirth  dtDateIssue 19990717 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone 9404084 MailingAddress  MailingPhone  Output Account057C004579 State A CALL SP_OpenPrivateAccount_VCB
+('LE ','MINH DUC','C','122/5/17 TON DAN P.10 Q.4 TPHCM','122/5/17 TON DAN P.10 Q.4 TPHCM','','','','19820418','023599841','19990717','','F','0071004501918','','VietComBank') ErrorCode 0000 2008-07-04 10:52:28

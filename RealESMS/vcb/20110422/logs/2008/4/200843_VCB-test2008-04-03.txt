@@ -1,0 +1,5 @@
+<!-- Log file 4-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard JQ740682 Name  Huỳnh Phước Address  BankAccountNo 0071004351170 PartnerType F dtBirthDay 19450504 PlaceOfBirth  dtDateIssue 20060928 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057FIA0233 State A ErrorCode0000 2008-04-03 02:45:30
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard JQ740682 Name  Huỳnh Phước Address  BankAccountNo 0071004351170 PartnerType F dtBirthDay 19450504 PlaceOfBirth  dtDateIssue 20060928 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057FIA0233 State A ErrorCode0000 2008-04-03 04:11:07
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 023312299 Name BUI THI THUY DUONG Address 48N CXNH TRAN XUAN SOAN Q7 HCM BankAccountNo 0071004359022 PartnerType C dtBirthDay  PlaceOfBirth  dtDateIssue 20000000 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account State A ErrorCode8020 2008-04-03 04:15:24

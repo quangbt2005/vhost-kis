@@ -1,0 +1,3 @@
+<!-- Log file 3-2008 --!>
+
+ --> 192.168.137.33 function_name OpenAccount Input PersonalCard 024160363 Name TRAN  TRONG NGHIA Address  BankAccountNo 00071004357130 PartnerType C dtBirthDay 19640126 PlaceOfBirth  dtDateIssue 20031030 PlaceIssue  ZipCode  Country  Email  Phone  Fax  CompanyAddress  CompanyPhone  MailingAddress  MailingPhone  Output Account057C008918 State A ErrorCode0000 2008-03-06 04:14:02
