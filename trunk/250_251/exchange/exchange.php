@@ -4,6 +4,7 @@ session_start();
 $_DOC_ROOT = $_SERVER['DOCUMENT_ROOT'];
 
 define("DAB_WEBSERVICE_URL", "https://webservice.dongabank.com.vn/securities/WSBean?wsdl");
+define("DAB_TOOLS", 1);
 //db
 define("DB_TYPE", "mysqli");
 define("DB_NAME_TRADING_BOARD", "esms");
@@ -68,7 +69,7 @@ if ( $_SESSION['UserName'] != '') {
 				return true;
 			else
 				return false;
-		}	
+		}
 	}
 </script>
 	<?
