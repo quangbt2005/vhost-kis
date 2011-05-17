@@ -39,13 +39,13 @@ if ( $_SESSION['UserName'] != '') {
 	} else {
 
 			$dab = &new CDAB();
-			$soapclient = new SOAP_Client('http://172.25.2.248/ws/exchange.php?wsdl');
+			$soapclient = new SOAP_Client('http://172.25.2.99:8250/ws/exchange.php?wsdl');
 			$soapclient->setOpt("timeout", 100);
-			$options = array('namespace' => 'urn:CExchange', 'trace' => 1);	
+			$options = array('namespace' => 'urn:CExchange', 'trace' => 1);
 
-			$params = array( 
-									'OrderDate' => date("Y-m-d"), 
-									'BankID' => 2, 
+			$params = array(
+									'OrderDate' => date("Y-m-d"),
+									'BankID' => 2,
 									'AuthenUser' => 'ba.nd', 'AuthenPass' => md5('hsc080hsc'));
 
 			if ($_REQUEST['Type'] >0 ) {
